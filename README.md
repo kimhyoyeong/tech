@@ -10,8 +10,9 @@
 
 5. [HTML5 Outline](https://github.com/kimhyoyeong/task/blob/master/03/HTML5_outline.md)
 
-6. [웹페이지 속도 테스트](https://github.com/kimhyoyeong/task/blob/master/04/webPageTest.md)<br>
-   [웹 성능 메트릭](https://github.com/kimhyoyeong/task/blob/master/04/webPerformanceMetrics.md)
+6. [웹 성능 메트릭](https://github.com/kimhyoyeong/task/blob/master/04/webPerformanceMetrics.md)
+
+7. [웹페이지 속도 테스트](https://github.com/kimhyoyeong/task/blob/master/04/webPageTest.md)
 
 7. [webpack 4](https://github.com/kimhyoyeong/task/tree/master/05/webpack4)
 
