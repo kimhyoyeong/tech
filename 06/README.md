@@ -71,19 +71,39 @@ $ npm install webpack webpack-cli --save-dev && $ npm install webpack webpack-de
 ```javascript
 //package.json
 {
-  "name": "test14",
+  "name": "test17",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-	"build": "webpack",//빌드
-	"dev": "webpack-dev-server --inline --hot"//local에서 실시간 변경 확인
+	"watch": "webpack --watch",
+	"build": "webpack --mode production",
+	"dev": "webpack-dev-server --mode development --inline --hot"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-	/*설치된 로더 플러그인*/
+	"babel-core": "^6.26.3",
+	"babel-loader": "^7.1.5",
+	"babel-preset-env": "^1.7.0",
+	"babel-preset-react": "^6.24.1",
+	"css-loader": "^1.0.0",
+	"extract-text-webpack-plugin": "^4.0.0-beta.0",
+	"file-loader": "^1.1.11",
+	"html-loader": "^0.5.5",
+	"html-webpack-plugin": "^3.2.0",
+	"node-sass": "^4.9.2",
+	"raw-loader": "^0.5.1",
+	"sass-loader": "^7.0.3",
+	"style-loader": "^0.21.0",
+	"url-loader": "^1.0.1",
+	"webpack": "^4.16.1",
+	"webpack-cli": "^3.0.8",
+	"webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+	"jquery": "^3.3.1"
   }
 }
 ```
@@ -104,21 +124,32 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-	mode: 'development',//production
+	mode: 'development',
+	//production 배포용일 경우 알아서 최적화가 됨
 
-	entry: [
-		// 번들링 포인트(root 모듈의 위치 또는 시작지점), string 또는 배열로 입력
-		'webpack-dev-server/client?http://localhost:8080',// 2개의 dev-server 엔트리포인트가 서버와 브라우저에 접속하여 HMR 허용
-		'webpack/hot/only-dev-server',
-		'./src/index.js'
-	],
+	entry: {
+		index: './src/index.js',
+		entry: './src/js/entry.js'
+	},
 
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		//publicPath: '/dist/',//설정하면 dist파일 바라봄
-		filename: 'bundle.js'
+		//path.resolve([from…], to)전달받은 경로의 절대 경로를 리턴합니다'C:\\from\\to'
+		//__dirname 은 항상 현재 파일의 디렉토리
+
+		//publicPath: '/dist',
+		// 클라이언트가 빌드된 파일에 접근할 수 있도록 서버가 제공할 path
+		// CDN 주소 사용 가능
+
+		filename: '[name].bundle.js'
+		// 결과물 파일명
+		// app.js -> app.js
+		// [name].js -> entry에서 설정한 이름(object key).js
+		// [hash].js -> 빌드마다 변경되는 해시.js
+		// [chunkhash].js -> 파일 고유의 해시(파일이 달라질 경우 변경됨).js
 	},
 
 	module: {
@@ -159,28 +190,53 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [
 
+	plugins: [
+		//build전에 결과물이 생성되는 파일을 비워줌
+		new CleanWebpackPlugin(['dist']),
+
+		//jquery
 		new webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery'
 		}),
 
-		new webpack.HotModuleReplacementPlugin(),
+		// HMR을 전체적으로 사용할수 있도록 설정
+		//new webpack.HotModuleReplacementPlugin(),
+		//package.json  --hot 추가해도 작동함
 
+		//css추출 플러그인
 		new ExtractTextPlugin({
-			filename: "styles.css"
+			//filename: "styles.css",
+
+			filename : '[name].css',
+			// // entry에 선언된 객체의 각 프로퍼티가 [name]과 치환되어 파일이 생성
+			// disable : false,
+			allChunks : true
 		}),
 
+		//html build
 		new HtmlWebpackPlugin({
-			template: './src/main.html'
+			title: 'index',
+			hash: true,
+			filename: 'index.html',
+			chunks: ['index', 'entry'],
+			template: path.join(__dirname, 'index.html')
+		}),
+		new HtmlWebpackPlugin({
+			title: 'main',
+			hash: true,
+			filename: 'index2.html',
+			chunks: ['entry'],
+			template: path.join(__dirname, './src/main.html')
 		})
+
 	],
 
+
+	//최적화
 	optimization: {
-		minimize: true,
-		splitChunks: {},
-		concatenateModules: true
+		minimize: true
 	},
 
 	resolve: {
@@ -189,11 +245,22 @@ module.exports = {
 	},
 
 	devServer: {
-		//contentBase: path.join(__dirname, 'dist'),
-		hot: true
+		contentBase: path.join(__dirname, 'dist'),
+		//output path를 match하도록 합니다.
+		//path.join(path1, path2…) 파라미터로 전달받은 경로를 이어서 하나의 경로로 만듭니다 'path1\\path2'
+
+		hot: true,
+		//server에 HMR을 사용할수 있도록 설정
+
+		//publicPath: '/dist'
+		//publicPath의 ouput 같게 설정
 	},
 
-	devtool: 'eval-source-map'
+	devtool: 'eval-source-map',
+
+	performance: {
+		hints: process.env.NODE_ENV === 'production' ? "warning" : false
+	}
 };
 ```
 
@@ -213,4 +280,5 @@ require('./style2.scss')
 [Webpack의 혼란스런 사항들]: http://webframeworks.kr/tutorials/translate/webpack-the-confusing-parts/
 
 [--save와 --save-dev의 차이점은 무엇입니까?]: https://code-examples.net/ko/q/15d4acb
+[Webpack4 주요 변경점]: https://labo.lansi.kr/posts/50
 
