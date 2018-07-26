@@ -272,6 +272,35 @@ require('./style.scss')
 require('./style2.scss')
 ```
 
+
+
+
+
+------
+
+
+
+### SCSS hot reload
+
+[ruby설치] ?
+gem install sass
+gem install scss
+
+**Tool-File Watchers**
+
+[program]
+C:\Ruby25-x64\bin\scss.bat
+[argument]
+--no-cache
+--update
+$FileName$:$FileNameWithoutExtension$.css
+--style
+compact
+[output...]
+$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map
+
+
+
 ------
 
 [웹팩4(Webpack) 설정하기]: https://www.zerocho.com/category/Webpack/post/58aa916d745ca90018e5301d
