@@ -278,8 +278,6 @@ require('./style2.scss')
 
 ------
 
-
-
 ### SCSS hot reload
 
 [ruby설치] ?
@@ -298,8 +296,6 @@ $FileName$:$FileNameWithoutExtension$.css
 compact
 [output...]
 $FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map
-
-
 
 ------
 
