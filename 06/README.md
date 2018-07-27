@@ -63,10 +63,6 @@ $ npm install webpack webpack-cli --save-dev//특정 의존성으로 설치할 �
 $ npm init -y//package.json 파일생성
 ```
 
-```javascript
-$ npm install webpack webpack-cli --save-dev && $ npm install webpack webpack-dev-server webpack-cli --save-dev//webpack4 설치
-```
-
 `package.json`
 
 ```javascript
@@ -269,7 +265,7 @@ module.exports = {
 
 `index.js`
 
-``` json
+```javascript
 import entry from './entry'
 
 require('./style.scss')
