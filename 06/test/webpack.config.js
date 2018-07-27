@@ -1,76 +1,139 @@
-//webpack.config.js
-//íŒŒì¼ê²½ë¡œì™€ ì›¹íŒ© ë¼ì´ë¸ŒëŸ¬ë¦¬ ë¡œë”© : outputì†ì„±ì—ì„œ ì‚¬ìš©í•  ë…¸ë“œ path ë¼ì´ë¸ŒëŸ¬ë¦¬ì™€ ì›¹íŒ© í”ŒëŸ¬ê·¸ì¸ì—ì„œ ì‚¬ìš©í•  node_modulesì˜ ì›¹íŒ© ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ node_modulesì˜ì—ì„œ ë¡œë”©í•˜ì—¬ path, webpackì— ê°ê° ì €ì¥
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'development',//Production
-  //entryì†ì„± : ì›¹íŒ©ìœ¼ë¡œ ë¹Œë“œí•  íŒŒì¼ì„ src í´ë” ë°‘ì˜ main.jsíŒŒì¼ë¡œ ì§€ì •
-  entry: {
-    main: './src/index.js',
-  },
-  //outputì†ì„± : ì›¹íŒ©ìœ¼ë¡œ ë¹Œë“œí•˜ê³ ë‚œ ê²°ê³¼ë¬¼ íŒŒì¼ì˜ ìœ„ì¹˜ì™€ ì´ë¦„ ì§€ì •
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
-    filename: 'bundle.js'
-  },
-  //moduleì†ì„± : ì›¹íŒ©ìœ¼ë¡œ ì• í”Œë¦¬ì¼€ì´ì…˜ íŒŒì¼ë“¤ì„ ë¹Œë“œ í• ë•Œ html,css ë“±ì´ íŒŒì¼ì„ ìë°”ìŠ¤í¬ë¦½íŠ¸ë¡œ ë³€í™˜í•´ì£¼ëŠ” ë¡œë”ë¥¼ ì§€ì •
-  module: {
-    rules: [
-        // {//bundle.jsë¡œ í•©ì³ì§
-        //     test:/\.(s*)css$/,
-        //     use: ['style-loader','css-loader','sass-loader']
-        // },
-        {//cssë¡œ ì¶”ì¶œ í”ŒëŸ¬ê·¸ì¸ ì‚¬ìš©
-            test:/\.(s*)css$/,
-            use: ExtractTextPlugin.extract({
-              fallback: 'style-loader',
-              use: ['css-loader','sass-loader']
-            })
-        },
-        {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: "babel-loader"
-            }
-        },
-        {
-          test: /\.(ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          loader: 'url-loader',
-          options: {
-            name: '[hash].[ext]',
-            limit: 10000,
-          },
-        }
-    ]
-  },
-  plugins: [
-    new ExtractTextPlugin("styles.css"),
-    new HtmlWebpackPlugin({
-      title: 'Project Demo',
-      minify: {
-        collapseWhitespace: true
-      },
-      hash: true,
-      template: './index.html'
-    })
-  ],
-  optimization: {
-    minimize: false,
-    splitChunks: {},
-    concatenateModules: true
-  },
-  resolve: {
-    modules: ['node_modules'],
-    extensions: ['.js', '.json', '.jsx', '.css']
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000
-  }
-}
+	mode: 'development',
+	//production ¹èÆ÷¿ëÀÏ °æ¿ì ¾Ë¾Æ¼­ ÃÖÀûÈ­°¡ µÊ
+
+	entry: {
+		index: './src/index.js'
+	},
+
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		//path.resolve([from¡¦], to)Àü´Ş¹ŞÀº °æ·ÎÀÇ Àı´ë °æ·Î¸¦ ¸®ÅÏÇÕ´Ï´Ù'C:\\from\\to'
+		//__dirname Àº Ç×»ó ÇöÀç ÆÄÀÏÀÇ µğ·ºÅä¸®
+
+		//publicPath: '/dist',
+		// Å¬¶óÀÌ¾ğÆ®°¡ ºôµåµÈ ÆÄÀÏ¿¡ Á¢±ÙÇÒ ¼ö ÀÖµµ·Ï ¼­¹ö°¡ Á¦°øÇÒ path
+		// CDN ÁÖ¼Ò »ç¿ë °¡´É
+
+		filename: '[name].bundle.js'
+		// °á°ú¹° ÆÄÀÏ¸í
+		// app.js -> app.js
+		// [name].js -> entry¿¡¼­ ¼³Á¤ÇÑ ÀÌ¸§(object key).js
+		// [hash].js -> ºôµå¸¶´Ù º¯°æµÇ´Â ÇØ½Ã.js
+		// [chunkhash].js -> ÆÄÀÏ °íÀ¯ÀÇ ÇØ½Ã(ÆÄÀÏÀÌ ´Ş¶óÁú °æ¿ì º¯°æµÊ).js
+	},
+
+	module: {
+		rules: [
+			// {//bundle.js·Î ÇÕÃÄÁü
+			//     test:/\.(s*)css$/,
+			//     use: ['style-loader','css-loader','sass-loader']
+			// },
+
+			{//css·Î ÃßÃâ ÇÃ·¯±×ÀÎ »ç¿ë
+				test: /\.(s*)css$/,
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: ['css-loader?sourceMap', 'sass-loader?sourceMap'],
+				})
+			},
+
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: "babel-loader"
+				}
+			},
+
+			{
+				test: /\.(ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+				loader: 'url-loader',
+				options: {
+					name: '[hash].[ext]',
+					limit: 10000
+				}
+			},
+
+			{
+				test: /\.html$/,
+				loader: "raw-loader"
+			}
+		]
+	},
+
+	plugins: [
+		//buildÀü¿¡ °á°ú¹°ÀÌ »ı¼ºµÇ´Â ÆÄÀÏÀ» ºñ¿öÁÜ
+		new CleanWebpackPlugin(['dist']),
+
+		//jquery
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery'
+		}),
+
+		// HMRÀ» ÀüÃ¼ÀûÀ¸·Î »ç¿ëÇÒ¼ö ÀÖµµ·Ï ¼³Á¤
+		//new webpack.HotModuleReplacementPlugin(),
+		//package.json  --hot Ãß°¡ÇØµµ ÀÛµ¿ÇÔ
+
+		//cssÃßÃâ ÇÃ·¯±×ÀÎ
+		new ExtractTextPlugin({
+			//filename: "styles.css",
+
+			filename : '[name].css',
+			// // entry¿¡ ¼±¾ğµÈ °´Ã¼ÀÇ °¢ ÇÁ·ÎÆÛÆ¼°¡ [name]°ú Ä¡È¯µÇ¾î ÆÄÀÏÀÌ »ı¼º
+			// disable : false,
+			allChunks : true
+		}),
+
+		//°øÅë ¸ğµâ·Î ±¸¼ºµÈ ÆÄÀÏ
+		// new webpack.optimize.CommonsChunkPlugin({
+		// 	name: 'common'
+		// }),
+
+		//html build
+		new HtmlWebpackPlugin({
+			title: 'index',
+			hash: true,
+			filename: 'index.html',
+			chunks: ['index'],
+			template: path.join(__dirname, 'index.html')
+		})
+
+	],
+
+
+	//ÃÖÀûÈ­
+	optimization: {
+		minimize: true
+	},
+
+	resolve: {
+		modules: ['node_modules'],
+		extensions: ['.js', '.json', '.jsx', '.css']
+	},
+
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		//output path¸¦ matchÇÏµµ·Ï ÇÕ´Ï´Ù.
+		//path.join(path1, path2¡¦) ÆÄ¶ó¹ÌÅÍ·Î Àü´Ş¹ŞÀº °æ·Î¸¦ ÀÌ¾î¼­ ÇÏ³ªÀÇ °æ·Î·Î ¸¸µì´Ï´Ù 'path1\\path2'
+
+		hot: true
+		//server¿¡ HMRÀ» »ç¿ëÇÒ¼ö ÀÖµµ·Ï ¼³Á¤
+
+		//publicPath: '/dist'
+		//publicPathÀÇ ouput °°°Ô ¼³Á¤
+	},
+
+	devtool: 'eval-source-map',
+
+	performance: {
+		hints: process.env.NODE_ENV === 'production' ? "warning" : false
+	}
+};

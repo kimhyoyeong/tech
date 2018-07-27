@@ -108,7 +108,7 @@ $ npm init -y//package.json 파일생성
 $ npm install//package.json 설정된 패키지 설치
 ```
 
-`.babelrc`(root파일추가)
+`.babelrc` 파일추가
 
 ```javascript
 {
@@ -116,7 +116,7 @@ $ npm install//package.json 설정된 패키지 설치
 }
 ```
 
-`webpack.config.js`
+`webpack.config.js` 파일추가
 
 ```javascript
 const webpack = require('webpack');
@@ -130,8 +130,7 @@ module.exports = {
 	//production 배포용일 경우 알아서 최적화가 됨
 
 	entry: {
-		index: './src/index.js',
-		entry: './src/js/entry.js'
+		index: './src/index.js'
 	},
 
 	output: {
@@ -214,20 +213,18 @@ module.exports = {
 			allChunks : true
 		}),
 
+		//공통 모듈로 구성된 파일
+		// new webpack.optimize.CommonsChunkPlugin({
+		// 	name: 'common'
+		// }),
+
 		//html build
 		new HtmlWebpackPlugin({
 			title: 'index',
 			hash: true,
 			filename: 'index.html',
-			chunks: ['index', 'entry'],
+			chunks: ['index'],
 			template: path.join(__dirname, 'index.html')
-		}),
-		new HtmlWebpackPlugin({
-			title: 'main',
-			hash: true,
-			filename: 'index2.html',
-			chunks: ['entry'],
-			template: path.join(__dirname, './src/main.html')
 		})
 
 	],
@@ -261,14 +258,32 @@ module.exports = {
 		hints: process.env.NODE_ENV === 'production' ? "warning" : false
 	}
 };
+
 ```
 
-`index.js`
+`index.html` 파일추가
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+</head>
+<body>
+<h1>index</h1>
+</body>
+</html>
+```
+
+`src/index.js ` 파일추가
 
 ```javascript
-import entry from './entry'
+import entry from './js/entry';
+import style from './scss/style.scss';
 
-require('./style.scss')
+
+import index from '../index.html';//추가해야지만 HMR 가능
 ```
 
 > **ES6** import
@@ -297,6 +312,29 @@ require('./style.scss')
 > // 특정 멤버(함수 등)만 import, 위의 module을 이용한다.
 > module.moduleFunc
 > ```
+
+`src/js/entry.js` 파일추가
+
+```javascript
+console.log("entry import된걸 확인할 수 있음");
+```
+
+`src/scss/style.css` 파일추가
+
+```scss
+$primary-color:#f00;
+body{background:$primary-color}
+```
+
+★
+
+```javascript
+$npm run dev//로컬 확인 가능
+```
+
+```javascript
+$npm run build//dist 번들파일이 생성된걸 확인할 수 있음
+```
 
 <br>
 

@@ -1,6 +1,5 @@
-import entry from './js/entry'
-import hello from './js/hello'
-require('./scss/style.scss')
-require('./scss/style2.scss')
+import entry from './js/entry';
+import style from './scss/style.scss';
 
-console.log("test")
+
+import index from '../index.html';//추가해야지만 HMR 가능
