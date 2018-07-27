@@ -319,7 +319,7 @@ import index from '../index.html';//추가해야지만 HMR 가능
 console.log("entry import된걸 확인할 수 있음");
 ```
 
-`src/scss/style.css` 파일추가
+`src/scss/style.scss` 파일추가
 
 ```scss
 $primary-color:#f00;
@@ -329,7 +329,7 @@ body{background:$primary-color}
 ★
 
 ```javascript
-$npm run dev//로컬 확인 가능
+$npm run dev//http://localhost:8080 로컬 확인 가능
 ```
 
 ```javascript
