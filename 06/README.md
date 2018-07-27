@@ -5,7 +5,6 @@
 ```javascript
 $ npm init // npm 환경초기화
 $ npm init -y// npm환경초기화 + 기본값으로 셋팅
-
 //package.json 파일 생성됨
 ```
 
@@ -68,43 +67,44 @@ $ npm init -y//package.json 파일생성
 $ npm install webpack webpack-cli --save-dev && $ npm install webpack webpack-dev-server webpack-cli --save-dev//webpack4 설치
 ```
 
+`package.json`
+
 ```javascript
-//package.json
 {
-  "name": "test17",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-	"watch": "webpack --watch",
-	"build": "webpack --mode production",
-	"dev": "webpack-dev-server --mode development --inline --hot"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-	"babel-core": "^6.26.3",
-	"babel-loader": "^7.1.5",
-	"babel-preset-env": "^1.7.0",
-	"babel-preset-react": "^6.24.1",
-	"css-loader": "^1.0.0",
-	"extract-text-webpack-plugin": "^4.0.0-beta.0",
-	"file-loader": "^1.1.11",
-	"html-loader": "^0.5.5",
-	"html-webpack-plugin": "^3.2.0",
-	"node-sass": "^4.9.2",
-	"raw-loader": "^0.5.1",
-	"sass-loader": "^7.0.3",
-	"style-loader": "^0.21.0",
-	"url-loader": "^1.0.1",
-	"webpack": "^4.16.1",
-	"webpack-cli": "^3.0.8",
-	"webpack-dev-server": "^3.1.4"
-  },
-  "dependencies": {
-	"jquery": "^3.3.1"
-  }
+	"name": "test17",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack --mode production",
+		"dev": "webpack-dev-server --mode development --inline --hot"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.5",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"clean-webpack-plugin": "^0.1.19",
+		"css-loader": "^1.0.0",
+		"extract-text-webpack-plugin": "^4.0.0-beta.0",
+		"file-loader": "^1.1.11",
+		"html-loader": "^0.5.5",
+		"html-webpack-plugin": "^3.2.0",
+		"node-sass": "^4.9.2",
+		"raw-loader": "^0.5.1",
+		"sass-loader": "^7.0.3",
+		"style-loader": "^0.21.0",
+		"url-loader": "^1.0.1",
+		"webpack": "^4.16.1",
+		"webpack-cli": "^3.0.8",
+		"webpack-dev-server": "^3.1.4"
+	},
+	"dependencies": {
+		"jquery": "^3.3.1"
+	}
 }
 ```
 
@@ -112,12 +112,15 @@ $ npm install webpack webpack-cli --save-dev && $ npm install webpack webpack-de
 $ npm install//package.json 설정된 패키지 설치
 ```
 
+`.babelrc`(root파일추가)
+
 ```javascript
-//.babelrc(root파일추가)
 {
   "presets": ["env"]
 }
 ```
+
+`webpack.config.js`
 
 ```javascript
 const webpack = require('webpack');
@@ -249,7 +252,7 @@ module.exports = {
 		//output path를 match하도록 합니다.
 		//path.join(path1, path2…) 파라미터로 전달받은 경로를 이어서 하나의 경로로 만듭니다 'path1\\path2'
 
-		hot: true,
+		hot: true
 		//server에 HMR을 사용할수 있도록 설정
 
 		//publicPath: '/dist'
@@ -264,21 +267,48 @@ module.exports = {
 };
 ```
 
-```json
-//index.js
+`index.js`
+
+``` json
 import entry from './entry'
-import hello from './hello'
+
 require('./style.scss')
-require('./style2.scss')
 ```
 
+> **ES6** import
+>
+> ```javascript
+> // 모듈 전체를 import
+> import module
+> import module as myModule
+>
+> // 모든 속성 import
+> import * from module
+>
+> // 특정 멤버(함수 등)만 import
+> import {moduleFunc, moduleFunc2} from module
+> ```
+>
+> **CommonJs** require
+>
+> ```javascript
+> // 모듈 전체를 import
+> var module = require('./someModule.js');
+>
+> // 모든 속성 import
+> // (위의 module 객체에 모든 속성이 담아져 온다.)
+>
+> // 특정 멤버(함수 등)만 import, 위의 module을 이용한다.
+> module.moduleFunc
+> ```
 
-
-
+<br>
 
 ------
 
-### SCSS hot reload
+<br>
+
+### SCSS hot reload -정리중
 
 [ruby설치] ?
 gem install sass
