@@ -84,6 +84,7 @@ $ npm init -y//package.json 파일생성
 		"babel-preset-env": "^1.7.0",
 		"babel-preset-react": "^6.24.1",
 		"clean-webpack-plugin": "^0.1.19",
+         "css-hot-loader": "^1.4.1",
 		"css-loader": "^1.0.0",
 		"mini-css-extract-plugin": "^0.4.1",
 		"file-loader": "^1.1.11",
@@ -158,8 +159,13 @@ module.exports = {
 			// },
 
 			{//css로 추출 플러그인 사용
-			    test:/\.(s*)css$/,
-			    use: [MiniCssExtractPlugin.loader, 'css-loader','sass-loader']
+			    test:/\.scss$/,
+			    use: [
+					'css-hot-loader',
+			    	MiniCssExtractPlugin.loader,
+					'css-loader',
+					'sass-loader'
+				]
 			},
 
 			{
