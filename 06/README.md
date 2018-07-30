@@ -85,7 +85,7 @@ $ npm init -y//package.json 파일생성
 		"babel-preset-react": "^6.24.1",
 		"clean-webpack-plugin": "^0.1.19",
 		"css-loader": "^1.0.0",
-		"extract-text-webpack-plugin": "^4.0.0-beta.0",
+		"mini-css-extract-plugin": "^0.4.1",
 		"file-loader": "^1.1.11",
 		"html-loader": "^0.5.5",
 		"html-webpack-plugin": "^3.2.0",
@@ -121,7 +121,7 @@ $ npm install//package.json 설정된 패키지 설치
 ```javascript
 const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -158,11 +158,8 @@ module.exports = {
 			// },
 
 			{//css로 추출 플러그인 사용
-				test: /\.(s*)css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: 'style-loader',
-					use: ['css-loader?sourceMap', 'sass-loader?sourceMap'],
-				})
+			    test:/\.(s*)css$/,
+			    use: [MiniCssExtractPlugin.loader, 'css-loader','sass-loader']
 			},
 
 			{
@@ -204,7 +201,7 @@ module.exports = {
 		//package.json  --hot 추가해도 작동함
 
 		//css추출 플러그인
-		new ExtractTextPlugin({
+		new MiniCssExtractPlugin({
 			//filename: "styles.css",
 
 			filename : '[name].css',
