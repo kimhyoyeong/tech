@@ -343,29 +343,6 @@ $npm run build//dist 번들파일이 생성된걸 확인할 수 있음
 
 ------
 
-<br>
-
-### SCSS hot reload -정리중
-
-[ruby설치] ?
-gem install sass
-gem install scss
-
-**Tool-File Watchers**
-
-[program]
-C:\Ruby25-x64\bin\scss.bat
-[argument]
---no-cache
---update
-$FileName$:$FileNameWithoutExtension$.css
---style
-compact
-[output...]
-$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map
-
-------
-
 [웹팩4(Webpack) 설정하기]: https://www.zerocho.com/category/Webpack/post/58aa916d745ca90018e5301d
 [webpack 설정 option에 대해서]: https://trustyoo86.github.io/webpack/2018/01/10/webpack-configuration.html
 
