@@ -1,9 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-	mode: 'development',
+	mode: 'production',
 
 	entry: {
 		index: './src/index.js'
@@ -19,9 +22,9 @@ module.exports = {
 			{
 				test: /\.s?css$/,
 				use: [
-					'style-loader',
-					{ loader: 'css-loader', options: { url: false, sourceMap: true } },
-					{ loader: 'sass-loader', options: { sourceMap: true } }
+					MiniCssExtractPlugin.loader,
+					{loader: 'css-loader', options: {url: false, sourceMap: true}},
+					{loader: 'sass-loader', options: {sourceMap: true}}
 				]
 			},
 
@@ -48,10 +51,17 @@ module.exports = {
 	},
 
 	plugins: [
+		new CleanWebpackPlugin(['dist']),
+
 		//jquery
 		new webpack.ProvidePlugin({
 			$: 'jquery',
 			jQuery: 'jquery'
+		}),
+
+		//cssExtract
+		new MiniCssExtractPlugin({
+			filename: 'bundle.css'
 		}),
 
 		//htmlBuild
@@ -68,6 +78,7 @@ module.exports = {
 	//√÷¿˚»≠
 	optimization: {
 		minimize: true
+		//minimizer: [new OptimizeCSSAssetsPlugin({})]
 	},
 
 	resolve: {
@@ -79,7 +90,7 @@ module.exports = {
 		contentBase: path.join(__dirname, 'dist'),
 		hot: true
 	},
-	devtool: 'inline-module-source-map',
+	devtool: 'cheap-module-source-map',
 	performance: {
 		hints: false
 	}
