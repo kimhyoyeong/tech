@@ -12,10 +12,10 @@ module.exports = merge(common, {
 		new OptimizeCSSAssetsPlugin({
 			cssProcessorOptions: {
 				map: {
-					//inline: true//inline source maps, use
+					inline: true//inline source maps, use
 
-					inline: false,//external source maps, use
-					annotation: true
+					// inline: false,//external source maps, use
+					// annotation: true
 				}
 			}
 		})
@@ -23,8 +23,8 @@ module.exports = merge(common, {
 
 	optimization: {
 		minimize: true
-	},
+	}
 
-	devtool: 'cheap-module-source-map'
+	//devtool: 'cheap-module-source-map'
 
 });
