@@ -15,8 +15,7 @@ module.exports = merge(common, {
 		hints: false//js 용량이 250kb 이상인 경우 webpack에서 경고 메시지를 표시 'warning'/ 'error'
 	},
 
-	resolve: {//node_modules 디렉토리 안에 있는 모든 extensions설정된 파일들을 확장자명 없어도 파일을 인식하게 해준다
-		modules: ['node_modules'],
+	resolve: {//require(‘./myFile’) 과 같은 빈 확장자를 import하게 도와주는 역할
 		extensions: ['.js', '.json', '.jsx', '.scss']
 	}
 });
