@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --inline --hot"
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack-dev-server --config webpack.dev.js --hot"
   },
   "keywords": [],
   "author": "",
@@ -31,7 +31,8 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
   },
   "dependencies": {
     "jquery": "^3.3.1"

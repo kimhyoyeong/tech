@@ -2,12 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-	mode: 'production',
-
 	entry: {
 		index: './src/index.js'
 	},
@@ -22,12 +18,12 @@ module.exports = {
 			{
 				test: /\.s?css$/,
 				use: [
+					'css-hot-loader',
 					MiniCssExtractPlugin.loader,
 					{loader: 'css-loader', options: {url: false, sourceMap: true}},
 					{loader: 'sass-loader', options: {sourceMap: true}}
 				]
 			},
-
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
@@ -51,8 +47,6 @@ module.exports = {
 	},
 
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
-
 		//jquery
 		new webpack.ProvidePlugin({
 			$: 'jquery',
@@ -73,25 +67,5 @@ module.exports = {
 			template: path.join(__dirname, 'index.html')
 		})
 
-	],
-
-	//√÷¿˚»≠
-	optimization: {
-		minimize: true
-		//minimizer: [new OptimizeCSSAssetsPlugin({})]
-	},
-
-	resolve: {
-		modules: ['node_modules'],
-		extensions: ['.js', '.json', '.jsx', '.css']
-	},
-
-	devServer: {
-		contentBase: path.join(__dirname, 'dist'),
-		hot: true
-	},
-	devtool: 'cheap-module-source-map',
-	performance: {
-		hints: false
-	}
+	]
 };
