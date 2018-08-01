@@ -10,15 +10,17 @@ module.exports = merge(common, {
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new OptimizeCSSAssetsPlugin({
-			cssProcessor: require('cssnano'),
 			cssProcessorOptions: {
-				preset: 'default',
-				map: {inline: true}
+				map: {
+					//inline: true//inline source maps, use
+
+					inline: false,//external source maps, use
+					annotation: true
+				}
 			}
 		})
 	],
 
-	//√÷¿˚»≠
 	optimization: {
 		minimize: true
 	},
