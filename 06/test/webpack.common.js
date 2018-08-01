@@ -68,10 +68,5 @@ module.exports = {
 			template: path.join(__dirname, 'index.html')
 		})
 
-	],
-
-	resolve: {
-		modules: ['node_modules'],
-		extensions: ['.js', '.json', '.jsx', '.css']
-	}
+	]
 };
