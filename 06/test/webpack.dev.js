@@ -16,6 +16,7 @@ module.exports = merge(common, {
 	},
 
 	resolve: {//require(‘./myFile’) 과 같은 빈 확장자를 import하게 도와주는 역할
+		modules: ['node_modules'],
 		extensions: ['.js', '.json', '.jsx', '.scss']
 	}
 });
