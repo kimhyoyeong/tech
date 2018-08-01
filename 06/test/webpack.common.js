@@ -10,6 +10,7 @@ module.exports = {
 
 	output: {
 		path: path.resolve(__dirname, 'dist'),
+		//publicPath:'',//정적파일을 불러올때 경로 설정 cdn
 		filename: 'bundle.js'
 	},
 
