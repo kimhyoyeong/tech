@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@mixin animation($attr...) {
+	animation:($attr);
+	-webkit-animation:($attr);
+	-moz-animation:($attr);
+	-o-animation:($attr);
+}
+
+@mixin rotate($degree) {
+	transform:rotate($degree);
+	-webkit-transform:rotate($degree);
+	-moz-transform:rotate($degree);
+	-o-transform:rotate($degree);
+	-ms-transform:rotate($degree);
+}
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
