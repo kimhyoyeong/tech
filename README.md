@@ -14,8 +14,9 @@
 
 7. [웹페이지 속도 테스트](https://kimhyoyeong.github.io/Task/04) [2018-06-12 upload]
 
-7. [webpack 4](https://kimhyoyeong.github.io/Task/06)  [2018-07 updating]
+8. [webpack 4](https://kimhyoyeong.github.io/Task/06)  [2018-07 updating]
 
-   ​
+9. [미디어쿼리](https://kimhyoyeong.github.io/Task/07) [2018-11-09 upload]
+
 
 
