@@ -163,33 +163,33 @@ foo();
 
 ## 클로저
 
-> **함수가 함수를 둘러싼 렉시컬 환경을 기억하는 것**
+> 이미 생명주기가 끝난 외부함수의 변수를 참조하는 함수를 클로저라고함.
 
 ```javascript
-var color = 'red';
-		
-function foo() {
-    var color = 'blue';
-    function bar() {
-        //bar는 color를 찾아 출력하는 함수 , bar는 외부환경 참조하여 foo환경을 저장함
-        console.log(color);
+function count() {
+    var cnt = 0;
+    function addCount() {
+        cnt++;
+        console.log(cnt)
     }
-    return bar;
+    return addCount;
 }
 
-var baz = foo(); //bar를 global의 baz란 이름으로 호출
-baz(); //bar는 자신의 스코프에서 color를 찾는다. 없다. 외부환경 참조찾아감 foo를 뒤짐 color을 찾음 값은 blue		
+var increase = count();
+increase();
+increase();
+increase();
+increase();
 ```
 
-bar는 자신이 생성된 렉시컬 스코프에서 벗어나 global에서 baz라는 이름으로 호출되었고, 
-
-스코프 탐색은 현재 실행된 스택과 관련없는 foo를 거쳐간다.
-
-**baz를 bar로 초기화 할때는 이미 bar의 외부렉시컬환경을 foo로 결정한 이후이다.** 
-
-때문에 bar 생성과 직접관련이 없는 global에서 아무리 호출하더라도 foo에서 color를 찾는 것이다. 
-
-이런 bar(또는 baz) 와같은 함수를 클로저라 부른다.
+1. count() 함수가 호출되면 지역변수 cnt=0 초기화됨 동시에 만들어짐
+2. 내부에 addCount()라는 함수도 만들어지고 마지막으로 addCount() 함수를 리턴하고 Count()함수는 종료가 됨
+3. 그렇다면 count() 함수가 종료되면 일반 함수처럼 addCount() 함수와 지역변수인 cnt는 사라질까?
+   그렇지 않음, count() 함수가 종료되더라도 사라지지 않고 계속해서 값을 유지하게됨.
+   이유는 ? count() 함수 내부에서 cnt 변수를 사용하고 있는 상태에서 외부로 리턴되어 클로저 현상이 발생하기때문
+4. 이런 이유로 increase() 실행되면 addCount()함수가 실행되어 증가연산자에의해 1증가
+   increase() 또 실행하면 이전값을 기억하고있기때문에 2가 됨.
+5. 이처럼 **변수가 메모리에서 제거되지않고 계속해서 값을 유지하는 상태를 클로저**라고 부르며 내부에 있는 함수를 클로저함수라고함.
 
 
 
