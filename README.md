@@ -18,5 +18,6 @@
 
 9. [미디어쿼리](https://kimhyoyeong.github.io/Task/07) [2018-11-09 upload]
 
+10. [javascript 기초](https://kimhyoyeong.github.io/Task/08) [2018-11 정리중]
 
 
