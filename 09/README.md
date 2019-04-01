@@ -76,7 +76,7 @@
 
    3) 확인
 
-   ![<매핑>](<https://code.d2.co.kr/2019/ella/images/img_server05.gif>)
+     ![](https://code.d2.co.kr/2019/ella/images/img_server05.gif)
 
 7. 테스트 파일 생성 후,
 
