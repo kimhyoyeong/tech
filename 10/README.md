@@ -12,4 +12,4 @@
 
    아래 순서와 같이 설정, scss파일 저장시 자동으로 컴파일 되는 것을 확인할 수 있음.
 
-   ![](D:\work\d2.co.kr\Task\10\img_file_wathers_settings.jpg)
+   ![](.\img_file_wathers_settings.jpg)
