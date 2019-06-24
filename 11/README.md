@@ -64,11 +64,19 @@ https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test02.html
 
 ```css
 .root{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+
+    -webkit-box-orient:vertical;
+    -ms-flex-direction:column;
     flex-direction:column;
-    min-height:100%;
+
+    height:100%;
 }
 main{
+    -webkit-flex-grow:1;
+    -ms-flex-positive:1;
     flex-grow:1;
 }
 ```
