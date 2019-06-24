@@ -76,8 +76,9 @@ https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test02.html
 }
 main{
     -webkit-flex-grow:1;
-    -ms-flex-positive:1;
+    -ms-flex: 1;
     flex-grow:1;
+    display:inline-block;/*IE10대응*/
 }
 ```
 
