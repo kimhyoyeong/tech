@@ -69,14 +69,15 @@ https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test02.html
     display:flex;
 
     -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
     -ms-flex-direction:column;
     flex-direction:column;
 
     height:100%;
 }
 main{
-    -webkit-flex-grow:1;
-    -ms-flex: 1;
+    -webkit-box-flex:1;
+    -ms-flex-positive:1;
     flex-grow:1;
     display:inline-block;/*IE10대응*/
 }
