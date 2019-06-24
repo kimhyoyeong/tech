@@ -69,7 +69,7 @@ https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test02.html
     min-height:100%;
 }
 main{
-	flex-grow:1;
+    flex-grow:1;
 }
 ```
 
@@ -129,9 +129,7 @@ https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test03.html
 }
 ```
 
-그외 예제 - <https://bitsofco.de/the-target-trick/>
-
-그외 예제 - <https://bitsofco.de/the-target-trick/>
+그외 예제 - <https://bitsofco.de/the-target-trick/
 
 
 
