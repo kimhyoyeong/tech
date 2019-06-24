@@ -62,7 +62,7 @@ TEST -  <https://codepen.io/anon/pen/pXPOdG>
 
 ### 사용예제
 
-https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test02.html
+01 - https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test02.html
 
 ```css
 .root{
@@ -85,13 +85,35 @@ main{
 }
 ```
 
-
-
-### 지원브라우저
+#### 지원브라우저
 
 IE 10 미만을 제외한 최신 브라우저에 잘 동작합니다.
 
 실질적으로 모바일에서만 사용할 수 있을 것 같습니다.
+
+
+
+02 - <https://codepen.io/anon/pen/JQNazb?&editable=true>
+
+```css
+html,body{
+    min-height:100%;
+}
+html {
+	position:relative;
+}
+footer {
+    position:absolute;
+    width:100%;
+    bottom:0;
+}
+```
+
+#### 지원브라우저
+
+IE 9 미만을 제외한 최신 브라우저에 잘 동작합니다.
+
+
 
 
 
