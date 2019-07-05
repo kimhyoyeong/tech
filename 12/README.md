@@ -74,7 +74,6 @@ D:\work\code\2019\loreal>npm install
    
     `node_modules`  폴더 생성됨
    
-   
 
 ## build하기
 
