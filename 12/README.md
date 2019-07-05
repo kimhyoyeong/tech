@@ -69,7 +69,7 @@ code서버와 경로 동기화 필요함
    `Terminal` 창에 (4.) 설정된 경로옆에  `npm install` 명령어 입력
 
    ```
-D:\work\code\2019\loreal>npm install
+	D:\work\code\2019\loreal>npm install
    ```
    
     `node_modules`  폴더 생성됨
