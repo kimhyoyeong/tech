@@ -169,27 +169,26 @@ gulp.task('clean', function() {
 
 ```json
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "del": "^5.0.0",
-    "gulp": "^4.0.2",
-    "gulp-replace": "^1.0.0",
-    "gulp-util": "^3.0.8",
-    "php-include-html": "^1.4.2"
-  },
-  "dependencies": {
-    "path": "^0.12.7",
-    "pump": "^3.0.0"
-  }
+ "name": "test",
+ "version": "1.0.0",
+ "description": "",
+ "main": "index.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "keywords": [],
+ "author": "",
+ "license": "ISC",
+ "devDependencies": {
+  "del": "^5.0.0",
+  "gulp": "^4.0.2",
+  "gulp-replace": "^1.0.0",
+  "gulp-util": "^3.0.8",
+  "php-include-html": "^1.4.2",
+  "path": "^0.12.7",
+  "pump": "^3.0.0"
+ },
+ "dependencies": {}
 }
 ```
 
