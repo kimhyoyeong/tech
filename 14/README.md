@@ -132,9 +132,6 @@
    > ```css
    > #main{color:#fff;background-color:#000}#main p{width:10em}.huge{font-size:10em;font-weight:bold;text-decoration:underline}
    > ```
-<<<<<<< HEAD
-
-
 
 
 
