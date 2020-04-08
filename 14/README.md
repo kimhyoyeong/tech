@@ -18,7 +18,7 @@
 
 2. Ruby https://rubyinstaller.org/downloads/
 
-3. 명령 프롬프트에 `gem install sass` 입력 설치 ![image-20200407230319279](D:\work\Task\14\image-20200407230319279.png)
+3. 명령 프롬프트에 `gem install sass` 입력 설치 ![image-20200407230319279](https://github.com/kimhyoyeong/Task/blob/master/14/image-20200407230319279.png)
 
 
 
@@ -27,13 +27,13 @@
 1. Scope :  프로젝트 마다 아래 설정 반복하지 않게 All Places로 설정
 2. Program : 설치한 Ruby를 SCSS 컴파일러로 지정 
 
-![2](D:\work\Task\14\2.gif)
+![2](https://github.com/kimhyoyeong/Task/blob/master/14/2.gif)
 
 
 
 3.  Arguments : 옵션 설정 
 
-   ![image-20200407232043056](D:\work\Task\14\image-20200407232043056.png)
+   ![image-20200407232043056](https://github.com/kimhyoyeong/Task/blob/master/14/image-20200407232043056.png)
 
    
 
@@ -132,6 +132,7 @@
    > ```css
    > #main{color:#fff;background-color:#000}#main p{width:10em}.huge{font-size:10em;font-weight:bold;text-decoration:underline}
    > ```
+<<<<<<< HEAD
 
 
 
@@ -172,3 +173,4 @@
 복사한 리스트들이 출력되고 해당 리스트에서 엔터하면 입력된다.
 
 ![3](D:\work\Task\14\3.gif)
+=======
