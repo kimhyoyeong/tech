@@ -27,6 +27,10 @@
 
 트윈맥스로 애니메이션 작업 
 
+```html
+<object type="image/svg+xml" data="../images/icon/ico_mic.svg"></object>
+```
+
 ```javascript
 window.onload=function() {
 	var object = document.getElementById("iconMic");
