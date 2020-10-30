@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+    <style type="text/css">
+        .item01{ animation:motion01 1s infinite; transform-origin:50% 50%}
+        @keyframes motion01{
+        from{ opacity:0; }
+        to{ opacity:1; }
+        }
+    </style>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="#FFF" fill-rule="nonzero" stroke="#505050" stroke-width="2" d="M100.773 28.5c1.581 0 3.013.641 4.05 1.679 1.036 1.037 1.677 2.47 1.677 4.053h0v124.536c0 1.583-.641 3.016-1.678 4.053-1.036 1.038-2.468 1.679-4.05 1.679h0-60.545c-1.581 0-3.013-.641-4.05-1.679-1.036-1.037-1.677-2.47-1.677-4.053h0V34.232c0-1.583.641-3.016 1.678-4.053 1.036-1.038 2.468-1.679 4.05-1.679h0z" transform="translate(-1520 -393) translate(190 228) translate(1300) translate(20 61) translate(10 104) translate(21 5.5)"/>
+                                <path fill="#505050" d="M59.5 36.5H81.5V38.5H59.5z" transform="translate(-1520 -393) translate(190 228) translate(1300) translate(20 61) translate(10 104) translate(21 5.5)"/>
+
+                            </g>
+                            <path fill="#FFF" d="M62 81H120V123H62z" transform="translate(-1520 -393) translate(190 228) translate(1300) translate(20 61) translate(10 104)"/>
+                            <g class="item01">
+                                <g>
+                                    <path fill="#505050" fill-rule="nonzero" d="M62 0H0v38h62V0zm-2 2v34H2V2h58z" transform="translate(-1520 -393) translate(190 228) translate(1300) translate(20 61) translate(10 104) translate(60 79)"/>
+                                    <path fill="#505050" fill-rule="nonzero" d="M62 36H0v10h62V36zm-2 2v6H2v-6h58z" transform="translate(-1520 -393) translate(190 228) translate(1300) translate(20 61) translate(10 104) translate(60 79) matrix(1 0 0 -1 0 82)"/>
+                                    <path fill="#F5535F" d="M2 40H43V42H2z" transform="translate(-1520 -393) translate(190 228) translate(1300) translate(20 61) translate(10 104) translate(60 79)"/>
+                                </g>
+                                <path fill="#491BC7" d="M9.1 14v-2.806H11V8.845H9.1V0H6.639L0 8.855v2.34h6.262V14H9.1zM6 9H2l4-5v5zm10.359 5V9.77l2.723-2.34L23.654 14H28l-6.604-8.547L27.66 0h-4.516l-6.785 6.217V0H13v14h3.359z" transform="translate(-1520 -393) translate(190 228) translate(1300) translate(20 61) translate(10 104) translate(60 79) translate(17 12)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

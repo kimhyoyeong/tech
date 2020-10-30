@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M0 0H180V180H0z" transform="translate(-3340 -393) translate(190 228) translate(3120) translate(20 61) translate(10 104)"/>
+                            <g>
+                                <path fill="#FFF" fill-rule="nonzero" stroke="#505050" stroke-width="2" d="M67.273 1c1.581 0 3.013.641 4.05 1.679C72.358 3.716 73 5.149 73 6.732h0v124.536c0 1.583-.641 3.016-1.678 4.053-1.036 1.038-2.468 1.679-4.05 1.679h0H6.728c-1.581 0-3.013-.641-4.05-1.679C1.642 134.284 1 132.851 1 131.268h0V6.732c0-1.583.641-3.016 1.678-4.053C3.714 1.64 5.146 1 6.728 1h0z" transform="translate(-3340 -393) translate(190 228) translate(3120) translate(20 61) translate(10 104) translate(53 21)"/>
+                                <path fill="#505050" d="M26 9H48V11H26z" transform="translate(-3340 -393) translate(190 228) translate(3120) translate(20 61) translate(10 104) translate(53 21)"/>
+                            </g>
+                            <g>
+                                <path class="survey_icon_item0901" fill="#FFF" stroke="#505050" stroke-width="2" d="M118.499 67.725l.274.386C128.868 82.413 134 92.725 134 98.59c0 4.538-1.74 8.648-4.559 11.623-2.8 2.954-6.667 4.787-10.941 4.787-4.274 0-8.141-1.833-10.941-4.787-2.82-2.975-4.559-7.085-4.559-11.623 0-5.934 5.25-16.419 15.581-30.98l-.082.115zM13.5 1.728l.074.106C21.8 13.514 26 21.933 26 26.724c0 3.673-1.404 7-3.68 9.408C20.061 38.518 16.945 40 13.5 40c-3.446 0-6.562-1.482-8.82-3.868C2.405 33.724 1 30.397 1 26.724c0-4.848 4.297-13.409 12.715-25.3l-.215.304z" transform="translate(-3340 -393) translate(190 228) translate(3120) translate(20 61) translate(10 104) translate(17 34)"/>
+                                <path class="survey_icon_item0902" fill="#491BC7" d="M138 51l-.356.515C132.542 58.932 130 64.278 130 67.295c0 4.808 3.582 8.705 8 8.705s8-3.897 8-8.705c0-2.983-2.484-8.242-7.471-15.528L138 51z" transform="translate(-3340 -393) translate(190 228) translate(3120) translate(20 61) translate(10 104) translate(17 34)"/>
+                            </g>
+                            <g fill="#505050">
+                                <path d="M-9 20H31V22H-9z" transform="translate(-3340 -393) translate(190 228) translate(3120) translate(20 61) translate(10 104) translate(71 59) rotate(-60 11 21)"/>
+                                <path d="M-16 30H54V32H-16z" transform="translate(-3340 -393) translate(190 228) translate(3120) translate(20 61) translate(10 104) translate(71 59) rotate(-60 19 31)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

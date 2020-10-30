@@ -101,13 +101,16 @@ SVG 파일내에 CSS로 애니메이션 먹일수도 있음
 
 > object태그 사용시 SVG 내 <style type="text/css"> 추가해서 먹이면 되고,
 >
+> img태그로 넣어도 됨
+>
 > 인라인으로 사용시엔 공통 CSS에서 먹이면됨
 >
 > - SVG내에 외부 스타일시트를 불러오게 할 수 있으나 파일별로 재호출이 되서 성능 이슈 생길 수가있음
->- transform-origion 문제가 있음
+> - transform-origion 문제가 있음(svg로 감싸고 위치 변경후 안에 path값의 위치들 변경해주면 됨)
 
 ```html
 <object type="image/svg+xml" data="../images/icon/ico_mic.svg"></object>
+<img src="../images/icon/ico_mic.svg">
 ```
 
 ```svg
@@ -150,7 +153,7 @@ SVG 파일내에 CSS로 애니메이션 먹일수도 있음
 
 ### 2. 브라우저 호환
 
-IE는 SVG의 CSS 변화를 지원하지 않음!
+IE는 SVG의 CSS 변화(transform)를 지원하지 않음!
 
 
 
@@ -221,9 +224,9 @@ IE 안됨 폴리필 사용해서 가능하도록 함
 
 
 
-## 정리
+## [정리]
 
-되도록이면 javascript 트윈맥스로 구현 (내년 8월까지 IE를 못버리니까.)
+PC작업시엔  IE 대응을 위해 javascript 트윈맥스로 구현
 
 
 
