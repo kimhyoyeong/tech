@@ -2,44 +2,47 @@
     <style type="text/css">
         .item01{ animation:motion01 1s infinite; transform-origin:50% 50%}
         @keyframes motion01{
-            from{ opacity:0; }
-            to{ opacity:1; }
+        from{ opacity:0; }
+        to{ opacity:1; }
         }
     </style>
 
     <g fill="none" fill-rule="evenodd">
+
+        <path fill="#FFF" stroke="#505050" stroke-width="2"
+              d="M148.633 55.033h-22.021c-1.798 0-3.255-1.458-3.255-3.256V3.595c0-1.797 1.457-3.255 3.255-3.255h22.02c1.798 0 3.256 1.458 3.256 3.255v48.182c0 1.798-1.458 3.256-3.255 3.256"
+              transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31)"/>
         <g>
-            <g>
-                <g>
-                    <g>
-                        <g>
-                            <g>
-                                <path fill="#FFF" stroke="#505050" stroke-width="2" d="M148.633 55.033h-22.021c-1.798 0-3.255-1.458-3.255-3.256V3.595c0-1.797 1.457-3.255 3.255-3.255h22.02c1.798 0 3.256 1.458 3.256 3.255v48.182c0 1.798-1.458 3.256-3.255 3.256" transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31)"/>
-                                <g>
-                                    <path fill="#FFF" stroke="#505050" stroke-width="2" d="M71.329.812c-.972 6.407-12.484 11.68-27.692 13.069v2.875H27.691V13.88C12.482 12.494.97 7.22 0 .811h0zm102.377 0c-.97 6.408-12.483 11.682-27.692 13.07v2.874H130.07l-.001-2.875c-15.209-1.389-26.72-6.662-27.691-13.07h71.328zM83.916 17.595v5.874H27.692v-5.874h56.224zm62.098 0v5.874H89.79v-5.874h56.224z" transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(0 43.828)"/>
-                                    <path fill="#F5535F" d="M93.147 62.91L80.559 62.91 81.804 39.912 83.011 17.595 90.69 17.595z" transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(0 43.828)"/>
-                                    <path fill="#FFF" stroke="#505050" stroke-width="2" d="M67.972 71.039V63.1c0-1.03.844-1.869 1.884-1.869h33.158c1.039 0 1.881.839 1.881 1.87v8.2" transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(0 43.828)"/>
-                                    <path fill="#FFF" stroke="#505050" stroke-width="2" d="M62.937 74.658L109.93 74.658 109.93 66.266 62.937 66.266zM79.72 20.534c0-3.941 3.196-7.135 7.136-7.135 3.937 0 7.13 3.194 7.13 7.135 0 3.94-3.193 7.131-7.13 7.131-3.94 0-7.136-3.191-7.136-7.131" transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(0 43.828)"/>
-                                </g>
-                                <g>
-                                    <g fill="#FFF" stroke="#505050" stroke-width="2">
-                                        <path d="M1.678 18.626L30.864 18.626 30.864 11.913 1.678 11.913zM0 25.339L29.184 25.339 29.184 18.626 0 18.626zM.839 31.213L30.024 31.213 30.024 25.339.839 25.339zM2.517 6.039L31.701 6.039 31.701.164 2.517.164zM4.196 11.913L33.381 11.913 33.381 6.039 4.196 6.039zM3.357 37.088L32.541 37.088 32.541 31.213 3.357 31.213z" transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(10.07 7.552)"/>
-                                    </g>
-                                    <g class="item01" transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(10.07 7.552) translate(22.657 7.717)">
-                                        <circle cx="12.587" cy="12.587" r="12.587" fill="#491BC7"/>
-                                        <text fill="#FFF" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="16.783" font-weight="400">
-                                            <tspan x="5.748" y="19.196">￦</tspan>
-                                        </text>
-                                    </g>
-                                </g>
-                                <g class="item01" fill="#491BC7">
-                                    <path d="M13.968 1.759L3.17 12.093 8.207 15.126 3.401 23.759 16.17 15.31 10.787 11.162z" transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(128.391 10.395) rotate(-15 9.67 12.759)"/>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+            <path fill="#FFF" stroke="#505050" stroke-width="2"
+                  d="M71.329.812c-.972 6.407-12.484 11.68-27.692 13.069v2.875H27.691V13.88C12.482 12.494.97 7.22 0 .811h0zm102.377 0c-.97 6.408-12.483 11.682-27.692 13.07v2.874H130.07l-.001-2.875c-15.209-1.389-26.72-6.662-27.691-13.07h71.328zM83.916 17.595v5.874H27.692v-5.874h56.224zm62.098 0v5.874H89.79v-5.874h56.224z"
+                  transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(0 43.828)"/>
+            <path fill="#F5535F" d="M93.147 62.91L80.559 62.91 81.804 39.912 83.011 17.595 90.69 17.595z"
+                  transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(0 43.828)"/>
+            <path fill="#FFF" stroke="#505050" stroke-width="2"
+                  d="M67.972 71.039V63.1c0-1.03.844-1.869 1.884-1.869h33.158c1.039 0 1.881.839 1.881 1.87v8.2"
+                  transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(0 43.828)"/>
+            <path fill="#FFF" stroke="#505050" stroke-width="2"
+                  d="M62.937 74.658L109.93 74.658 109.93 66.266 62.937 66.266zM79.72 20.534c0-3.941 3.196-7.135 7.136-7.135 3.937 0 7.13 3.194 7.13 7.135 0 3.94-3.193 7.131-7.13 7.131-3.94 0-7.136-3.191-7.136-7.131"
+                  transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(0 43.828)"/>
+        </g>
+        <g>
+            <g fill="#FFF" stroke="#505050" stroke-width="2">
+                <path d="M1.678 18.626L30.864 18.626 30.864 11.913 1.678 11.913zM0 25.339L29.184 25.339 29.184 18.626 0 18.626zM.839 31.213L30.024 31.213 30.024 25.339.839 25.339zM2.517 6.039L31.701 6.039 31.701.164 2.517.164zM4.196 11.913L33.381 11.913 33.381 6.039 4.196 6.039zM3.357 37.088L32.541 37.088 32.541 31.213 3.357 31.213z"
+                      transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(10.07 7.552)"/>
+            </g>
+            <g class="item01"
+               transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(10.07 7.552) translate(22.657 7.717)">
+                <circle cx="12.587" cy="12.587" r="12.587" fill="#491BC7"/>
+                <text fill="#FFF" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="16.783"
+                      font-weight="400">
+                    <tspan x="5.748" y="19.196">￦</tspan>
+                </text>
             </g>
         </g>
+        <g class="item01" fill="#491BC7">
+            <path d="M13.968 1.759L3.17 12.093 8.207 15.126 3.401 23.759 16.17 15.31 10.787 11.162z"
+                  transform="translate(-480 -393) translate(190 228) translate(260) translate(18 61) translate(12 104) translate(4 31) translate(128.391 10.395) rotate(-15 9.67 12.759)"/>
+        </g>
+
     </g>
 </svg>
