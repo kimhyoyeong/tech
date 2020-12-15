@@ -170,8 +170,9 @@ Animate는 프로그램 학습이 필요로 하고 SVG를 활용함에 있어서
 #### 그 외 활용방법
 
 - GIF  출력방법
-  1. 파일 > 내보내기 > 애니메이션 GIF 내보내기
-
+  
+1. 파일 > 내보내기 > 애니메이션 GIF 내보내기
+  
 - PNG 시퀀스 출력 후 움직이는 PNG 파일 만드는 방법
   1. 파일 > 내보내기 > 동영상 내보내기 > 파일형식 PNG 시퀀스
   2. 변환 프로그램 https://ezgif.com/apng-maker 업로드 움직이는 파일로 작업 
@@ -184,4 +185,5 @@ Animate는 프로그램 학습이 필요로 하고 SVG를 활용함에 있어서
 
 
 
+https://kimhyoyeong.github.io/Task/15/svg_animate_motion.html 
 
