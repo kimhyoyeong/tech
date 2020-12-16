@@ -22,6 +22,8 @@ SVG를 활용해서 모션을 구현하기 위해 JS/CSS/Adobe Animate를 이용
 
 그 결과를 간단하게 정리하면,
 
+
+
 - JS - 트윈맥스를 사용하여 기존처럼 쉽게 모션 구현이 가능하다. 
 
 - CSS - 기존 CSS 애니메이션처럼 구현 가능하다.
@@ -158,12 +160,17 @@ Animate는 프로그램 학습이 필요로 하고 SVG를 활용함에 있어서
 
 
 
-- SVG 확장 프로그램을 활용한 방법
+##### 기본설치
 
-> Animated SVG Exporter 설치(움직이는 SVG 출력 확장프로그램)
-> https://exchange.adobe.com/creativecloud.details.7232.animated-svg-exporter.html
->
-> svg 파일로 내보내기 [윈도우 > 확장 > SVG animation > export]
+1. Adobe Animate 설치
+2. Animated SVG Exporter 설치(움직이는 SVG 출력 확장프로그램)
+   https://exchange.adobe.com/creativecloud.details.7232.animated-svg-exporter.html
+
+
+
+##### SVG 출력방법
+
+1. SVG 파일로 내보내기 [윈도우 > 확장 > SVG animation > export]
 
 
 
@@ -173,10 +180,14 @@ Animate는 프로그램 학습이 필요로 하고 SVG를 활용함에 있어서
   
 1. 파일 > 내보내기 > 애니메이션 GIF 내보내기
 
+
+
 - PNG 시퀀스 출력 후 움직이는 PNG 파일 만드는 방법
   1. 파일 > 내보내기 > 동영상 내보내기 > 파일형식 PNG 시퀀스
   2. 변환 프로그램 https://ezgif.com/apng-maker 업로드 움직이는 파일로 작업 
 
+  
+  
 - canvas로 출력하는 방법
 
   https://helpx.adobe.com/kr/animate/using/creating-publishing-html5-canvas-document.html
