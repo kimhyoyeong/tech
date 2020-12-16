@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180" viewBox="0 0 180 180">
+    <defs>
+        <path id="cv4p5gsaga" d="M35.447-4.847v59.4l-6.48 9-6.48-9v-59.4h12.96zM33.55 23.572h-9L24.5 53.81l4.534 6.588 4.467-6.59.05-30.236zm.044-26.845h-9l-.04 24.845h9l.04-24.845z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-4120 -393) translate(190 228) translate(3900) translate(20 61) translate(10 104)">
+                            <path d="M0 0H180V180H0z"/>
+                            <g>
+                                <path fill="#FFF" fill-rule="nonzero" stroke="#505050" stroke-width="2" d="M67.273 1c1.581 0 3.013.641 4.05 1.679C72.358 3.716 73 5.149 73 6.732h0v124.536c0 1.583-.641 3.016-1.678 4.053-1.036 1.038-2.468 1.679-4.05 1.679h0H6.728c-1.581 0-3.013-.641-4.05-1.679C1.642 134.284 1 132.851 1 131.268h0V6.732c0-1.583.641-3.016 1.678-4.053C3.714 1.64 5.146 1 6.728 1h0z" transform="translate(53 21)"/>
+                                <path fill="#505050" d="M26 9H48V11H26z" transform="translate(53 21)"/>
+                            </g>
+                            <g class="survey_icon_item1201" transform="translate(101 28)">
+                                <path fill="#FFF" d="M34.266 -3L24.338 -3 24.186 56 28.959 62.05 34.113 55.996z" transform="rotate(45 29.226 29.525)"/>
+                                <path fill="#491BC7" d="M48.1 2.731L38.173 2.731 38.02 28.651 47.948 28.649z" transform="rotate(45 43.06 15.69)"/>
+                                <use fill="#505050" transform="rotate(45 28.967 29.353)" xlink:href="#cv4p5gsaga"/>
+                            </g>
+                            <circle class="survey_icon_item1202" cx="100.5" cy="85.5" r="4.5" fill="#F5535F"/>
+                            <path stroke="#F5535F" stroke-linecap="round" stroke-width="2" d="M69.41 141.615c-11.465-9.413 31.63-5.332 39.866-16.296C117.51 114.355 83.73 107.64 79 100.069c-3.154-5.047.588-9.404 11.225-13.069"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

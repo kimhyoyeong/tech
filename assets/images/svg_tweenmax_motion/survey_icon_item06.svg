@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="#FFF" fill-rule="nonzero" stroke="#505050" stroke-width="2" d="M100.773 28.5c1.581 0 3.013.641 4.05 1.679 1.036 1.037 1.677 2.47 1.677 4.053h0v124.536c0 1.583-.641 3.016-1.678 4.053-1.036 1.038-2.468 1.679-4.05 1.679h0-60.545c-1.581 0-3.013-.641-4.05-1.679-1.036-1.037-1.677-2.47-1.677-4.053h0V34.232c0-1.583.641-3.016 1.678-4.053 1.036-1.038 2.468-1.679 4.05-1.679h0z" transform="translate(-2040 -393) translate(190 228) translate(1820) translate(20 61) translate(10 104) translate(21 5.5)"/>
+                                <path fill="#505050" d="M59.5 36.5H81.5V38.5H59.5z" transform="translate(-2040 -393) translate(190 228) translate(1820) translate(20 61) translate(10 104) translate(21 5.5)"/>
+
+                            </g>
+                            <g>
+                                <path d="M0 0H72V72H0z" transform="translate(-2040 -393) translate(190 228) translate(1820) translate(20 61) translate(10 104) translate(32 67)"/>
+                                <path fill="#FFF" d="M3 18H62V54H3z" transform="translate(-2040 -393) translate(190 228) translate(1820) translate(20 61) translate(10 104) translate(32 67)"/>
+                                <g>
+                                    <path fill="#505050" d="M0 0v38h60v-8h6V8.004h-6V0H0zm2 2h56v8h6v18h-6v8H2V2z" transform="translate(-2040 -393) translate(190 228) translate(1820) translate(20 61) translate(10 104) translate(32 67) translate(3 17)"/>
+                                    <path fill="#491BC7" d="M58 10H64V28H58z" transform="translate(-2040 -393) translate(190 228) translate(1820) translate(20 61) translate(10 104) translate(32 67) translate(3 17)"/>
+                                    <path class="survey_icon_item0601" fill="#F5535F" d="M36 6l-3.5 10.385-.311.614L39 17 25 32l3.5-10.385.311-.615H22L36 6z" transform="translate(-2040 -393) translate(190 228) translate(1820) translate(20 61) translate(10 104) translate(32 67) translate(3 17)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
