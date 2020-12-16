@@ -127,7 +127,7 @@ window.onload = function () {
 };
 ```
 
-[JS 예시 페이지](https://kimhyoyeong.github.io/Task/15/svg_tweenmax_motion.html)
+[JS 예시 페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_tweenmax_motion.html)
 
 
 
@@ -165,7 +165,7 @@ window.onload = function () {
 
 ```
 
-[CSS 예시 페이지](https://kimhyoyeong.github.io/Task/15/svg_css_motion.html)
+[CSS 예시 페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_css_motion.html)
 
 
 
