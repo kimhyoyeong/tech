@@ -22,7 +22,7 @@ title: hyo의 기술블로그
 email: kimhyo0089@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 기술블로그
-baseurl: " https://github.com/kimhyoyeong/minima" # the subpath of your site, e.g. /blog
+baseurl: "https://github.com/kimhyoyeong/minima" # the subpath of your site, e.g. /blog
 url: "https://kimhyoyeong.github.io/Task" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: n
 github_username:  kimhyoyeong
