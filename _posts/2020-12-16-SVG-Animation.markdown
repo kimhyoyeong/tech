@@ -80,11 +80,11 @@ SVG를 활용해서 모션을 구현하기 위해 JS/CSS/Adobe Animate를 이용
 2.  SVG 파일내 사용할 요소들에 클래스 추가
 3.  트윈맥스로 모션 구현
 
-```HTML
+```html
 <object id="survey_icon_item01" type="image/svg+xml" data="./svg_tweenmax_motion/survey_icon_item01.svg"></object>
 ```
 
-```SVG
+```html
 <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
     <g fill="none" fill-rule="evenodd">
         ...
@@ -127,7 +127,7 @@ window.onload = function () {
 };
 ```
 
-[페이지열기]: https://kimhyoyeong.github.io/Task/15/svg_tweenmax_motion.html	"svg_tweenmax_motion"
+[JS 예시 페이지](https://kimhyoyeong.github.io/Task/15/svg_tweenmax_motion.html )
 
 
 
@@ -137,11 +137,11 @@ window.onload = function () {
 2.  SVG 파일내 사용할 요소들에 클래스 추가
 3.  SVG 파일내  CSS로 애니메이션 속성 추가
 
-```HTML
+```html
 <img src="./svg_css_motion/survey_icon_item01.svg" alt="">
 ```
 
-```SVG
+```html
 <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
     <style type="text/css">
         
@@ -165,7 +165,7 @@ window.onload = function () {
 
 ```
 
-[페이지열기]: https://kimhyoyeong.github.io/Task/15/svg_css_motion.html	"svg_css_motion"
+[CSS 예시 페이지](https://kimhyoyeong.github.io/Task/15/svg_css_motion.html )
 
 
 
@@ -182,8 +182,7 @@ Animate는 프로그램 학습이 필요로 하고 SVG를 활용함에 있어서
 ##### 기본설치
 
 1. Adobe Animate 설치
-2. Animated SVG Exporter 설치(움직이는 SVG 출력 확장프로그램)
-   https://exchange.adobe.com/creativecloud.details.7232.animated-svg-exporter.html
+2. Animated SVG Exporter 설치([움직이는 SVG 출력 확장프로그램](https://exchange.adobe.com/creativecloud.details.7232.animated-svg-exporter.html))
 
 
 
@@ -196,22 +195,20 @@ Animate는 프로그램 학습이 필요로 하고 SVG를 활용함에 있어서
 #### 그 외 활용방법
 
 - GIF  출력방법
-  
-1. 파일 > 내보내기 > 애니메이션 GIF 내보내기
+  1. 파일 > 내보내기 > 애니메이션 GIF 내보내기
 
 
 
 - PNG 시퀀스 출력 후 움직이는 PNG 파일 만드는 방법
   1. 파일 > 내보내기 > 동영상 내보내기 > 파일형식 PNG 시퀀스
-  2. 변환 프로그램 https://ezgif.com/apng-maker 업로드 움직이는 파일로 작업 
+  2. [변환 프로그램](https://ezgif.com/apng-maker)  업로드 움직이는 파일로 작업 
 
   
   
 - canvas로 출력하는 방법
 
-  https://helpx.adobe.com/kr/animate/using/creating-publishing-html5-canvas-document.html
+  [참고페이지](https://helpx.adobe.com/kr/animate/using/creating-publishing-html5-canvas-document.html)
 
 
 
-[페이지]: https://kimhyoyeong.github.io/Task/15/svg_animate_motion.html	"svg_animate_motion"
-
+[animate 예시 페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
