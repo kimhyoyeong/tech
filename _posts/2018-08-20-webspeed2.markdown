@@ -1,0 +1,78 @@
+---
+title:  "웹 성능 메트릭"
+categories:
+  - aciform
+  - antiquarianism
+  - arrangement
+  - asmodeus
+  - broder
+  - buying
+  - championship
+  - chastening
+  - disinclination
+  - disinfection
+  - dispatch
+  - echappee
+  - enphagy
+tags:
+  - categories
+  - edge case
+---
+
+> Web Performance Metrics http://www.webpagetest.org/  
+
+
+
+사용자 관점에서 페이지 속도를 평가하는 더 유용한 벤치마크는 페이지가 쓸모있게 되기까지의 시간이다.
+이를 "인지성능"이라 칭한다.
+육안으로 가장 쉽게 인지할수있고 사용자에게 의미있는 성능 메트릭을 나타내기 때문이다.
+
+가장 사용자 공감에 가깝다고 생각되는 성능 메트릭은 아래와 같다.
+Start Render , Speed Index 
+
+
+
+**Page Weight**
+
+페이지무게 단일페이지 에셋의 합(HTML,CSS,JSP,IMG)
+
+
+
+ **TTFB(Time to First Byte)**
+
+브라우저가 리퀘스트를 한후에 서버로부터 첫 바이트를 받기까지의 시간을 밀리초로 측정한것
+환경에 특정적이며 개발중에 로컬상에서 테스트되는게 아님
+(사이트가 느리다고 했을때 제일먼저 측정하는게 TTFB)
+
+
+
+**Start Render**
+
+렌더링 시작점은 페이지 요청으로부터 첫페이지 콘텐츠가 나타날때까지 시간을 잰것,
+빈페이지가 아닌 콘텐츠가 보이는 시점
+
+
+
+**Load Time**
+
+모든 페이지 콘텐츠가 로딩된 시점
+
+
+
+**Speed Index** 
+
+페이지 속도 지수
+얼마나 빨리 콘텐츠가 디스플레이 되는지 전반적인 점수를 계산 낮을수록 좋음
+
+
+
+**Number of Requests**
+
+총 리퀘스트 수 요청된 페이지의 로딩을 완성하기 위해 웹브라우저가 몇 번이나 에셋/리소스를 요청하는지 나타냄
+
+
+
+
+
+> 참고 영상
+> http://grapevine9700.tistory.com/105
