@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="180"
+     viewBox="0 0 180 180">
+    <style type="text/css">
+        .item01{ animation:motion01 2s infinite; transform-origin:50% 50%;opacity:0;}
+        .item02{ animation:motion01 2s 0.5s infinite; transform-origin:50% 50%;opacity:0;}
+        @keyframes motion01{
+        0%{ opacity:0;transform:translateY(-5px)}
+        50%{ opacity:1;transform:translateY(0)}
+        100%{ opacity:1;transform:translateY(0)}
+        }
+    </style>
+    <defs>
+        <path id="nyje2cdeja" d="M26.918 0L24.486 5.889 21.883 0 20 0 23.576 8.091 22.053 11.78 23.915 11.78 28.78 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+
+        <path d="M0 0H180V180H0z"
+              transform="translate(-3860 -393) translate(190 228) translate(3640) translate(20 61) translate(10 104)"/>
+        <g>
+            <g>
+                <path fill="#FFF" fill-rule="nonzero" stroke="#505050" stroke-width="2"
+                      d="M67.273 1c1.581 0 3.013.641 4.05 1.679C72.358 3.716 73 5.149 73 6.732h0v124.536c0 1.583-.641 3.016-1.678 4.053-1.036 1.038-2.468 1.679-4.05 1.679h0H6.728c-1.581 0-3.013-.641-4.05-1.679C1.642 134.284 1 132.851 1 131.268h0V6.732c0-1.583.641-3.016 1.678-4.053C3.714 1.64 5.146 1 6.728 1h0z"
+                      transform="translate(-3860 -393) translate(190 228) translate(3640) translate(20 61) translate(10 104) translate(20 21) translate(33)"/>
+                <path fill="#505050" d="M26 9H48V11H26z"
+                      transform="translate(-3860 -393) translate(190 228) translate(3640) translate(20 61) translate(10 104) translate(20 21) translate(33)"/>
+            </g>
+            <g class="item01">
+                <path fill="#FFF" stroke="#505050" stroke-width="2" d="M1 1.265H58V38.265H1z"
+                      transform="translate(-3860 -393) translate(190 228) translate(3640) translate(20 61) translate(10 104) translate(20 21) translate(0 49)"/>
+                <path fill="#505050" d="M1 7.265H58V16.265H1z"
+                      transform="translate(-3860 -393) translate(190 228) translate(3640) translate(20 61) translate(10 104) translate(20 21) translate(0 49)"/>
+                <path fill="#FF404E" d="M7 23.265H37V25.265H7zM7 29.265H29V31.265H7z"
+                      transform="translate(-3860 -393) translate(190 228) translate(3640) translate(20 61) translate(10 104) translate(20 21) translate(0 49)"/>
+            </g>
+            <g class="item02">
+                <g
+                   transform="translate(-3860 -393) translate(190 228) translate(3640) translate(20 61) translate(10 104) translate(20 21) translate(85 45)">
+                    <rect width="46" height="46" x="1" y="1" fill="#FFF" stroke="#491BC7" stroke-width="2" rx="12"/>
+                    <rect width="36" height="36" x="6" y="6" fill="#FFF" stroke="#505050" stroke-width="2" rx="7"/>
+                    <g transform="translate(10 19)">
+                        <path fill="#505050"
+                              d="M14.333 7.31c-1.37 0-2.48-1.255-2.48-2.803 0-1.549 1.11-2.804 2.48-2.804 1.369 0 2.479 1.255 2.479 2.804 0 1.548-1.11 2.803-2.48 2.803zM16.63.215v.706C15.936.344 15.07 0 14.13 0 11.848 0 10 2.018 10 4.507s1.849 4.506 4.13 4.506c.94 0 1.806-.343 2.5-.92v.771h1.897V.215H16.63zM4.216 7.31c-1.373 0-2.487-1.255-2.487-2.803 0-1.549 1.114-2.804 2.487-2.804 1.374 0 2.487 1.255 2.487 2.804 0 1.548-1.113 2.803-2.487 2.803M4.427 0c-.953 0-1.83.354-2.53.947V.215H0v11.78h1.897V8.068c.7.592 1.577.946 2.53.946 2.28 0 4.13-2.017 4.13-4.506C8.557 2.017 6.707 0 4.427 0"/>
+                        <use fill="#505050" xlink:href="#nyje2cdeja"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+    <style type="text/css">
+        .item01{ animation:motion01 1s infinite; transform-origin:20% 75%}
+        @keyframes motion01{
+        from{ transform:scale(0); }
+        to{ transform:scale(1); }
+        }
+    </style>
+
+    <g fill="none" fill-rule="evenodd">
+        <svg x="82">
+            <g>
+                <path fill="#FFF" fill-rule="nonzero" stroke="#505050" stroke-width="2"
+                      d="M67.273 1c1.581 0 3.013.641 4.05 1.679C72.358 3.716 73 5.149 73 6.732h0v124.536c0 1.583-.641 3.016-1.678 4.053-1.036 1.038-2.468 1.679-4.05 1.679h0H6.728c-1.581 0-3.013-.641-4.05-1.679C1.642 134.284 1 132.851 1 131.268h0V6.732c0-1.583.641-3.016 1.678-4.053C3.714 1.64 5.146 1 6.728 1h0z"
+                      transform="translate(-2902 -393) translate(190 228) translate(2600) translate(20 61) translate(10 104) translate(12 21) translate(82)"/>
+                <path fill="#505050" d="M26 9H48V11H26z"
+                      transform="translate(-2902 -393) translate(190 228) translate(2600) translate(20 61) translate(10 104) translate(12 21) translate(82)"/>
+                <g class="item01">
+                    <path fill="#491BC7"
+                          d="M57.84 24l.71 1.861-.002.001 4.692 12.246-1.859.717-4.252-11.097-38.456 86.985 10.93-4.202.712 1.86-12.051 4.633v.002l-1.857.716-.003-.003-.004.003-.71-1.86.002-.002L11 103.614l1.858-.716 4.244 11.074 38.443-86.956-10.91 4.196-.71-1.861 12.05-4.633v-.001L57.833 24l.002.003.005-.002z"
+                          transform="translate(-2902 -393) translate(190 228) translate(2600) translate(20 61) translate(10 104) translate(12 21) translate(82)"/>
+                </g>
+            </g>
+        </svg>
+        <g>
+            <g transform="translate(-2820 -393) translate(190 228) translate(2600) translate(20 61) translate(10 104) translate(12 21)">
+                <rect width="72" height="136" x="1" y="1" fill="#FFF" stroke="#505050"
+                      stroke-width="2" rx="8"/>
+                <path fill="#505050" d="M.171 19H72.171V21H.171zM.171 117H72.171V119H.171z"/>
+            </g>
+            <g class="item01">
+                <path fill="#F5535F"
+                      d="M55.591 27l.71 1.861-.002.001 4.692 12.246-1.858.717-4.252-11.095-34.209 77.442 10.932-4.202.71 1.86-12.05 4.633v.001l-1.857.717-.003-.003-.004.002-.71-1.86.002-.001L13 97.073l1.858-.717 4.243 11.073 34.196-77.413-10.91 4.196-.71-1.861 12.05-4.633v-.001L55.585 27l.002.003.004-.002z"
+                      transform="translate(-2820 -393) translate(190 228) translate(2600) translate(20 61) translate(10 104) translate(12 21)"/>
+            </g>
+        </g>
+    </g>
+</svg>
