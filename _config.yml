@@ -21,7 +21,7 @@
 title: hyoyeong tech blog
 email: kimhyo0089@gmail.com
 description: tech blog
-baseurl: "/minima" # the subpath of your site, e.g. /blog
+baseurl: "/tech" # the subpath of your site, e.g. /blog
 url: "https://kimhyoyeong.github.io/tech/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  kimhyoyeong
