@@ -1,27 +1,10 @@
 ---
 title:  "PhpStorm SCSS Setting"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
 
 
-1. Ruby 다운로드 및 설치 <https://rubyinstaller.org/downloads/>
+1. [Ruby 다운로드 및 설치](https://rubyinstaller.org/downloads/) 
 
 2. cmd 입력
 

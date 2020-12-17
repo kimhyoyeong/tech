@@ -1,22 +1,5 @@
 ---
 title:  "HTML 산출물 자동화 [gulp]"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
 
@@ -35,7 +18,7 @@ https://nodejs.org/en/ LTS 버전 다운로드
 
 ## 서버셋팅[localhost]
 
-<http://localhost/2019/loreal/list/>
+http://localhost/
 
 code서버와 경로 동기화 필요함
 
@@ -45,7 +28,7 @@ code서버와 경로 동기화 필요함
 >
 > 최상위 루트가 code까지 되어있지 않으면 local에서 경로가 어긋남
 
-> <https://code.d2.co.kr/ella/webserver.html>
+> [웹서버셋팅](https://kimhyoyeong.github.io/tech/aciform/antiquarianism/arrangement/asmodeus/broder/buying/championship/chastening/disinclination/disinfection/dispatch/echappee/enphagy/webserver/)
 >
 > 참고하여 고급설정에 실제경로를 변경 (01->5. 참고)
 >
@@ -59,7 +42,7 @@ code서버와 경로 동기화 필요함
 
    > phpstorm 터미널에 입력 또는, 윈도우 명령 프롬프트에 입력(window->cmd 검색)
 
-   ```
+   ```javascript
    npm install -g gulp
    ```
 
@@ -67,7 +50,7 @@ code서버와 경로 동기화 필요함
 
    > include된 파일을 html로 변환시켜주는 모듈이 상대경로를 인식못해서 변경이 필요함 (아래는 예제)
 
-   ```php+HTML
+   ```html
    <? include $_SERVER["DOCUMENT_ROOT"]."/2019/loreal/shilladfshome/layout/head.html"?>
    ```
 
@@ -87,7 +70,7 @@ code서버와 경로 동기화 필요함
 
    `Terminal` 창에 (4.) 설정된 경로옆에  `npm install` 명령어 입력
 
-   ```
+   ```javascript
 	D:\work\code\2019\loreal>npm install
    ```
    
@@ -96,7 +79,7 @@ code서버와 경로 동기화 필요함
 
 ## build하기
 
-1.  `gulpfile.js` 열고 HTML 산출물 폴더명 설정
+1. `gulpfile.js` 열고 HTML 산출물 폴더명 설정
 
    ```javascript
    //--------------------------setting
@@ -107,7 +90,7 @@ code서버와 경로 동기화 필요함
 
 2. 명령어 입력 `gulp build`
 
-   ```
+   ```javascript
    D:\work\code\2019\loreal>gulp build
    ```
 

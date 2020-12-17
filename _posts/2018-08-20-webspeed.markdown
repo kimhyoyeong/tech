@@ -1,27 +1,10 @@
 ---
 title:  "웹페이지 속도 테스트"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
-> Webpagetest <http://www.webpagetest.org/>
+> [Webpagetest](<http://www.webpagetest.org/>)
 >
-> 챔프스터디 테스트 http://www.webpagetest.org/result/180609_QX_cdb5e9728c9ce00b406457ff04415436/
+> [챔프스터디 테스트](http://www.webpagetest.org/result/180609_QX_cdb5e9728c9ce00b406457ff04415436/)
 
 웹페이지의 속도는 사용자 경험에 직접적으로 영향을 주기 때문에 그 중요성이 더 커지고 있습니다. 
 
@@ -147,7 +130,13 @@ Waterfall 이 넒이가 짧을 수록 적을 수록 웹사이트가 더 빨리 �
 
 ------
 
-[^웹 페이지 속도 테스트 해석하기]: https://support.wix.com/ko/article/%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%95%B4%EC%84%9D%ED%95%98%EA%B8%B0
-[^How To Use WebPageTest - Part I]: https://www.2dogsdesign.com/how-to-webpagetest/
-[^How To Use WebPageTest - Part II]: https://www.2dogsdesign.com/webpagetest-waterfall/
+참고 출처
+
+[웹 페이지 속도 테스트 해석하기](https://support.wix.com/ko/article/%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%86%8D%EB%8F%84-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%95%B4%EC%84%9D%ED%95%98%EA%B8%B0)
+
+[How To Use WebPageTest - Part I](https://www.2dogsdesign.com/how-to-webpagetest/)
+
+[How To Use WebPageTest - Part II](https://www.2dogsdesign.com/webpagetest-waterfall/)
+
+
 

@@ -1,22 +1,5 @@
 ---
 title:  "Pure CSS Alternatives to JavaScript"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
 
@@ -37,9 +20,9 @@ tags:
 
 ### 사용예제
 
-<https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test01.html>
+[예제페이지](https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test01.html)
 
-TEST -  <https://codepen.io/anon/pen/pXPOdG>
+[테스트페이지](https://codepen.io/anon/pen/pXPOdG)
 
 ```css
 .sub-tab{
@@ -81,7 +64,7 @@ TEST -  <https://codepen.io/anon/pen/pXPOdG>
 
 ### 사용예제
 
-01 - https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test02.html
+01 - [예제페이지](https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test02.html)
 
 ```css
 .root{
@@ -112,7 +95,7 @@ IE 10 미만을 제외한 최신 브라우저에 잘 동작합니다.
 
 
 
-02 - <https://codepen.io/anon/pen/JQNazb?&editable=true>
+02 - [예제페이지](https://codepen.io/anon/pen/JQNazb?&editable=true)
 
 ```css
 html,body{
@@ -156,7 +139,7 @@ a href="#popup"팝업열기를 클릭하면 id="popup"에 포커싱됩니다.
 
 간단한 사용방법은 아래처럼 사용됩니다. 
 
-https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test03.html
+[예제페이지](https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test03.html)
 
 ```html
 <a href="#popup">팝업열기</a>
@@ -182,7 +165,7 @@ https://code.d2.co.kr/2019/lescape/home/mo/ko/html/99_etc/test03.html
 }
 ```
 
-그외 예제 - <https://bitsofco.de/the-target-trick/
+[그외 예제](https://bitsofco.de/the-target-trick/) 
 
 
 

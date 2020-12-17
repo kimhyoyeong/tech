@@ -1,22 +1,5 @@
 ---
 title:  "CSS Grid layout"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
 
@@ -25,7 +8,7 @@ tags:
 
 float는 많은 레이아웃 문제를 가지고 있기 때문에 클리어(clear)하는 것이 요구됩니다. 가장 악명높은 문제는 요소를 클리어 했을 때 가끔 페이지 내 상관없는 부분 아래로 강제로 이동되는 것입니다. 
 
-Inline block 레이아웃은 [inline-block 사이의 공백 문제](http://css-tricks.com/fighting-the-space-between-inline-block-elements/)를 해결해야 합니다. 더구나 이 문제에 대한 모든 [해결방법](http://davidwalsh.name/remove-whitespace-inline-block)은 [더럽거나](https://github.com/suitcss/components-grid/blob/master/lib/grid.css#L30) [성가십니다](https://twitter.com/thierrykoblentz/status/305152267374428160).
+Inline block 레이아웃은 inline-block 사이의 공백 문제를 해결해야 합니다. 더구나 이 문제에 대한 모든 해결방법은 더럽거나 성가십니다.
 
 
 
@@ -37,7 +20,7 @@ Inline block 레이아웃은 [inline-block 사이의 공백 문제](http://css-t
 
 ## Grid Layout Example
 
-https://www.google.co.kr/search?q=css+grid&newwindow=1&hl=ko&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj2wPi65dbkAhWWfd4KHca_BDEQ_AUIFCgD&biw=1920&bih=937
+[예제](https://www.google.co.kr/search?q=css+grid&newwindow=1&hl=ko&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj2wPi65dbkAhWWfd4KHca_BDEQ_AUIFCgD&biw=1920&bih=937)
 
 
 
@@ -47,7 +30,9 @@ https://www.google.co.kr/search?q=css+grid&newwindow=1&hl=ko&source=lnms&tbm=isc
 
 wrapper는 감싸주는 그리드이고 item들은 그리드 내부의 요소들이다.
 
-https://codepen.io/kimhyoyeong/pen/WNegRKe?editors=1100
+[테스트페이지](https://codepen.io/kimhyoyeong/pen/WNegRKe?editors=1100)
+
+
 
 ### 부모 속성
 
@@ -108,7 +93,7 @@ https://codepen.io/kimhyoyeong/pen/WNegRKe?editors=1100
 
 이는 정말 강력하며, 좀 더 직관적인 레이아웃이 됩니다.
 
-https://codepen.io/kimhyoyeong/pen/bGbxWdr
+[테스트페이지](https://codepen.io/kimhyoyeong/pen/bGbxWdr)
 
 ```scss
 .wrapper {
@@ -156,6 +141,4 @@ https://codepen.io/kimhyoyeong/pen/bGbxWdr
 
 
 
-> 자세한 속성 참고 블로그
->
-> https://heropy.blog/2019/08/17/css-grid/
+> [자세한 속성 참고 블로그](https://heropy.blog/2019/08/17/css-grid/)

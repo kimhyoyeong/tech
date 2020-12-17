@@ -1,22 +1,5 @@
 ---
 title:  "Vue.js"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
 
@@ -194,7 +177,3 @@ var app = new Vue({
 ```
 
 
-
-------
-
-..2탄으로

@@ -1,22 +1,5 @@
 ---
 title:  "WebStorm Settings"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
 
@@ -31,26 +14,30 @@ tags:
 
 #### 다운로드 및 설치
 
-1. Node.js  https://nodejs.org/ko/ 
+1. [Node.js](https://nodejs.org/ko/ )  
 
-2. Ruby https://rubyinstaller.org/downloads/
+2. [Ruby](https://rubyinstaller.org/downloads/) 
 
-3. 명령 프롬프트에 `gem install sass` 입력 설치 ![image-20200407230319279](https://github.com/kimhyoyeong/Task/blob/master/14/image-20200407230319279.png)
+3. 명령 프롬프트에 `gem install sass` 입력 설치 
 
+   ```javascript
+   gem i sass
+   ```
 
+   
 
 #### File Watcher Setting
 
 1. Scope :  프로젝트 마다 아래 설정 반복하지 않게 All Places로 설정
 2. Program : 설치한 Ruby를 SCSS 컴파일러로 지정 
 
-![2](https://github.com/kimhyoyeong/Task/blob/master/14/2.gif)
+![2](https://github.com/kimhyoyeong/tech/blob/tech-pages/assets/images/2.gif?raw=true)
 
 
 
 3.  Arguments : 옵션 설정 
 
-   ![image-20200407232043056](https://github.com/kimhyoyeong/Task/blob/master/14/image-20200407232043056.png)
+   ![image-20200407232043056](https://github.com/kimhyoyeong/tech/blob/tech-pages/assets/images/image-20200407232043056.png?raw=true)
 
    
 
@@ -76,7 +63,7 @@ tags:
 
    > SCSS 파일을 CSS 파일로 변환하면 map 파일이 생성되고, 변환된 CSS 파일 제일 밑에 다음과 같은 주석이 생성 
    >
-   > ```
+   > ```css
    > /*# sourceMappingURL=style.css.map */
    > ```
    >
@@ -168,11 +155,11 @@ tags:
 4.  Abbreviation : 예약어 정의 / Description : 설명 / Tempate text : 예약할 코드
 5. 하단 Define 클릭 후 사용 할 언어에 체크 `OK`
 
-![5](https://github.com/kimhyoyeong/Task/blob/master/14/5.gif)
+![5](https://github.com/kimhyoyeong/tech/blob/tech-pages/assets/images/5.gif?raw=true)
 
 
 
-![6](https://github.com/kimhyoyeong/Task/blob/master/14/6.gif)
+![6](https://github.com/kimhyoyeong/tech/blob/tech-pages/assets/images/6.gif?raw=true)
 
 
 
@@ -186,5 +173,4 @@ tags:
 
 복사한 리스트들이 출력되고 해당 리스트에서 엔터하면 입력된다.
 
-![3](https://github.com/kimhyoyeong/Task/blob/master/14/3.gif)
-=======
+![3](https://github.com/kimhyoyeong/tech/blob/tech-pages/assets/images/3.gif?raw=true)

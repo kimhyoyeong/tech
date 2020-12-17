@@ -1,25 +1,8 @@
 ---
 title:  "웹 성능 메트릭"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
-> Web Performance Metrics http://www.webpagetest.org/  
+> [Web Performance Metrics](http://www.webpagetest.org/) 
 
 
 
@@ -74,5 +57,4 @@ Start Render , Speed Index
 
 
 
-> 참고 영상
-> http://grapevine9700.tistory.com/105
+> [참고 영상](http://grapevine9700.tistory.com/105)

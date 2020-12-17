@@ -1,22 +1,5 @@
 ---
 title:  "윈도우10) 웹서버 IIS 만들기"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
 
@@ -26,17 +9,17 @@ tags:
 1. 제어판에서 프로그램제거를 클릭 후, 
    프로그램 및 기능에서 왼쪽 상단에 **windows 기능 켜기/끄기**를 클릭한다.
 
-   ![이미지1](https://code.d2.co.kr/2019/ella/images/img_server01.gif)
+   ![이미지1](https://code.d2.co.kr/ella/images/img_server01.gif)
 
 2. Windows 기능에서 항목들 중 **인터넷 정보 서비스** 체크박스를 체크한다.
    (그러면 아래와 같이 World Wide Web 서비스와 웹 관리 도구 체크박스도 자동으로 체크 된다.)
    확인을 클릭하면 윈도우에서 설정값에 따른 윈도우 자체 셋팅을 시작한다.
 
-   ![](https://code.d2.co.kr/2019/ella/images/img_server02.gif)
+   ![](https://code.d2.co.kr/ella/images/img_server02.gif)
 
 3. 완료 후, **컴퓨터 관리**를 검색한 후 들어간다.
 
-   ![](https://code.d2.co.kr/2019/ella/images/img_server04.gif)
+   ![](https://code.d2.co.kr/ella/images/img_server04.gif)
 
    왼쪽 트리구조로 되어있는 메뉴에, 
 
@@ -67,13 +50,12 @@ tags:
 
    하위 메뉴를 따라서 CGI를 체크한 후 확인!!
 
-3. PHP 다운로드 및 설치 (운영체제 확인 후)
-   <https://windows.php.net/download#php-7.3>
-
-    ▶ VC15 x64 Non Thread Safe (2019-Mar-07 01:55:08)
-
-   압축파일을 C:\php 폴더에 푼다.
-
+3. [PHP 다운로드 및 설치](<https://windows.php.net/download#php-7.3>) (운영체제 확인 후)
+   
+ ▶ VC15 x64 Non Thread Safe (2019-Mar-07 01:55:08)
+   
+압축파일을 C:\php 폴더에 푼다.
+   
 4. **php.ini** 파일 수정
 
    | 원본                   | 수정                    | 의미                                             |
@@ -95,13 +77,13 @@ tags:
 
    3) 확인
 
-     ![](https://code.d2.co.kr/2019/ella/images/img_server05.gif)
+     ![](https://code.d2.co.kr/ella/images/img_server05.gif)
 
 7. 테스트 파일 생성 후,
 
     주소창에 localhost 클릭 후 생성된 페이지 열어보면 오류가 안나는걸 알수 있음
 
-   ```HTML
+   ```html
    <!DOCTYPE html>
    <html lang="ko">
        <head>
@@ -120,6 +102,11 @@ tags:
 
 
 
-[IIS Web Server에 PHP  설치 및 사용]: https://flexsdk.tistory.com/23
-[윈도우10 웹서버 IIS만들기]: https://doyeworld.tistory.com/1
+참고 출처
+
+[IIS Web Server에 PHP  설치 및 사용](https://flexsdk.tistory.com/23)
+
+[윈도우10 웹서버 IIS만들기](https://doyeworld.tistory.com/1)
+
+
 

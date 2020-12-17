@@ -1,22 +1,5 @@
 ---
 title:  "javascript 필수 지식"
-categories:
-  - aciform
-  - antiquarianism
-  - arrangement
-  - asmodeus
-  - broder
-  - buying
-  - championship
-  - chastening
-  - disinclination
-  - disinfection
-  - dispatch
-  - echappee
-  - enphagy
-tags:
-  - categories
-  - edge case
 ---
 
 
@@ -39,7 +22,7 @@ DOM 이벤트 핸들러
 
 > HTML Event Handler처럼 Html과 JavaScript가 혼용되는 문제는 해결되었으나 **이벤트 핸들러에 하나의 함수만 바인딩 할 수 있으며 함수에 인수를 전달할 수 없는 단점**이 있다
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
 <body>
