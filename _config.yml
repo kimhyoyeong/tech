@@ -20,7 +20,7 @@ title                    : "HYO 기술블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "HYO"
-description              : "지식 저장 공간"
+description              : "습득한 지식을 공유 및 기록하기 위한 공간입니다"
 url                      : "https://kimhyoyeong.github.io/tech/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/tech" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
