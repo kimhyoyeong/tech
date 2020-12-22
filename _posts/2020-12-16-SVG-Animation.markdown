@@ -49,18 +49,18 @@ SVG를 활용해서 모션을 구현하기 위해 JS/CSS/Adobe Animate를 이용
 
 ## JS/CSS 구현 방법
 
-- SVG 파일 내에 사용할 요소에 클래스 추가한다.
+- SVG 코드 내 사용할 요소(ex. path)에 g태그로 감싸고 클래스를 추가한다.
 
   > 사용할 요소 fill값 색상 변경해보면 특정 가능함
 
-- g 태그를 사용해서 그룹핑 가능하다.
+- g 태그를 사용해서 그룹핑 가능하다. 
 
 
 
 ###  JS
 
-1.  SVG 파일 내에 요소를 사용하기 위해 object 태그를 사용
-2.  SVG 파일내 사용할 요소들에 클래스 추가
+1.  SVG 코드 안에 요소를 사용하기 위해 object 태그를 사용
+2.  SVG 코드 안에 사용할 요소들에 클래스 추가
 3.  트윈맥스로 모션 구현
 
 ```html
@@ -117,8 +117,8 @@ window.onload = function () {
 ### CSS 
 
 1. img, object, background 태그, 속성 사용 가능
-2.  SVG 파일내 사용할 요소들에 클래스 추가
-3.  SVG 파일내  CSS로 애니메이션 속성 추가
+2.  SVG 코드 안에 사용할 요소들에 클래스 추가
+3.  SVG 코드 안에 CSS로 애니메이션 속성 추가
 
 ```html
 <img src="./svg_css_motion/survey_icon_item01.svg" alt="">
