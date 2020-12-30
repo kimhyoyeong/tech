@@ -32,7 +32,7 @@ SVG를 활용해서 모션을 구현하기 위해 javascript/CSS/Adobe Animate�
 
 ### 1. javascript/CSS 활용한 구현 방법
 
-> SVG 코드 내 사용할 요소(ex. path)에 g태그로 감싸고 아이디 or 클래스를 추가하여 사용
+> SVG 코드 내 사용할 요소(ex. path)에 **g태그로 감싸고** 아이디 or 클래스를 추가하여 사용
 >
 > - 사용할 요소 fill값 색상 변경해보면서 특정
 > - g 태그를 사용해서 그룹핑
@@ -61,8 +61,6 @@ SVG를 활용해서 모션을 구현하기 위해 javascript/CSS/Adobe Animate�
 <br>
 
 2) SVG 코드 안에 사용할 요소들에 g 태그로 감싸고 아이디 추가
-
-> 그룹핑을 안할시 transform 적용안될수있음
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 40 40">
@@ -123,8 +121,6 @@ window.onload = function () {
 <br>
 
 2) SVG 코드 안에 사용할 요소들에 g 태그로 감싸고 아이디 추가
-
-> 그룹핑을 안할시 transform 적용안될수있음
 
 3) SVG 코드 바로 안에 style 넣어서 기존 처럼 CSS 애니메이션 구현
 
