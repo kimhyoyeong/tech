@@ -4,6 +4,8 @@ title:  "SVG Animation"
 
 
 
+<br>
+
 최근에 제플린을 사용하게 되면서 SVG 파일을 쉽게 다운로드할 수 있게 되었다
 
 SVG를 활용해서 모션을 쉽게 구현할 수 있는 방법에 대해 공부해보자
@@ -24,11 +26,11 @@ SVG를 활용해서 모션을 쉽게 구현할 수 있는 방법에 대해 공�
 
 SVG를 활용해서 모션을 구현하기 위해 javascript/CSS/Adobe Animate를 이용해서 테스트 해보았다
 
-<br>
+
 
 ### javascript/CSS 활용한 구현 방법
 
-<br>
+
 
 #### 공통
 
@@ -37,7 +39,7 @@ SVG 코드 내 사용할 요소(ex. path)에 g태그로 감싸고 아이디 or �
 - 사용할 요소 fill값 색상 변경해보면서 특정
 - g 태그를 사용해서 그룹핑
 
-<br>
+
 
 ####  javascript
 
@@ -47,19 +49,19 @@ SVG 코드 내 사용할 요소(ex. path)에 g태그로 감싸고 아이디 or �
 >
 > [+jsfddle테스트](https://jsfiddle.net/hyokim/u1tzres2/)
 
-<br>
 
-1. SVG 코드 안에 요소를 컨트롤하기 위해 object 태그를 사용
 
-   > inline으로 작업하면 소스가 더러워지기 떄문에 object 태그방법을 선호
+1) SVG 코드 안에 요소를 컨트롤하기 위해 object 태그를 사용
+
+> inline으로 작업하면 소스가 더러워지기 떄문에 object 태그방법을 선호
 
 ```html
 <object id="svgIcon" type="image/svg+xml" data="images/test.svg"></object>
 ```
 
-2. SVG 코드 안에 사용할 요소들에 g 태그로 감싸고 아이디 추가
+2) SVG 코드 안에 사용할 요소들에 g 태그로 감싸고 아이디 추가
 
-   > 그룹핑을 안할시 transform 적용안될수있음
+> 그룹핑을 안할시 transform 적용안될수있음
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 40 40">
@@ -79,7 +81,7 @@ SVG 코드 내 사용할 요소(ex. path)에 g태그로 감싸고 아이디 or �
 </svg>
 ```
 
-3. 트윈맥스로 기존처럼 모션 구현
+3) 트윈맥스로 기존처럼 모션 구현
 
 ```javascript
 window.onload = function () {
@@ -109,17 +111,17 @@ window.onload = function () {
 
 <br>
 
-1. img, object 태그 *or* background 속성 사용 가능
+1) img, object 태그 *or* background 속성 사용 가능
 
 ```html
 <img src="images/test.svg" alt="">
 ```
 
-2. SVG 코드 안에 사용할 요소들에 g 태그로 감싸고 아이디 추가
+2) SVG 코드 안에 사용할 요소들에 g 태그로 감싸고 아이디 추가
 
-   > 그룹핑을 안할시 transform 적용안될수있음
+> 그룹핑을 안할시 transform 적용안될수있음
 
-3. SVG 코드 바로 안에 style 넣어서 기존 처럼 CSS 애니메이션 구현
+3) SVG 코드 바로 안에 style 넣어서 기존 처럼 CSS 애니메이션 구현
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 40 40">
@@ -159,8 +161,9 @@ window.onload = function () {
 
 > ***IE 불가**(IE 구현을 위해 폴리필을 사용하는 방법도 있으나 현재 제공안함)
 
-2. [Animated SVG Exporter(움직이는 SVG 출력 확장프로그램)](https://exchange.adobe.com/creativecloud.details.7232.animated-svg-exporter.html) 설치
-2. SVG 파일로 내보내기 [윈도우 > 확장 > SVG animation > export]
+1) [Animated SVG Exporter(움직이는 SVG 출력 확장프로그램)](https://exchange.adobe.com/creativecloud.details.7232.animated-svg-exporter.html) 설치
+
+2) SVG 파일로 내보내기 [윈도우 > 확장 > SVG animation > export]
 
 
 
@@ -168,7 +171,7 @@ window.onload = function () {
 
 > ***IE 가능**
 
-1. 파일 > 내보내기 > 애니메이션 GIF 내보내기
+파일 > 내보내기 > 애니메이션 GIF 내보내기
 
 
 
@@ -178,11 +181,11 @@ window.onload = function () {
 >
 > PNG 시퀀스 출력 후 움직이는 PNG 파일 만듬
 
-1. 파일 > 내보내기 > 동영상 내보내기 > 파일형식 PNG 시퀀스
+1) 파일 > 내보내기 > 동영상 내보내기 > 파일형식 PNG 시퀀스
 
-2. [변환 프로그램](https://ezgif.com/apng-maker)에  업로드하여 움직이는 파일로 작업 
+2) [변환 프로그램](https://ezgif.com/apng-maker)에  업로드하여 움직이는 파일로 작업 
 
-   
+
 
 #### canvas로 출력하는 방법
 
