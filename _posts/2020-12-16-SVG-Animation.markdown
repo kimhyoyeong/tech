@@ -190,7 +190,7 @@ window.onload = function () {
 
 1) 파일 > 내보내기 > 동영상 내보내기 > 파일형식 PNG 시퀀스
 
-2) [변환 프로그램](https://ezgif.com/apng-maker)에  업로드하여 움직이는 파일로 작업 
+2) [Animated PNG Maker](https://ezgif.com/apng-maker)에  업로드하여 움직이는 파일로 작업 
 
 
 
