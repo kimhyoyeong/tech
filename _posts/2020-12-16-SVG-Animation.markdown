@@ -46,7 +46,7 @@ SVG를 활용해서 모션을 구현하기 위해 javascript/CSS/Adobe Animate�
 >
 > ***IE 가능**
 >
-> [+jsfddle테스트](https://jsfiddle.net/hyokim/u1tzres2/)
+> [jsfddle테스트](https://jsfiddle.net/hyokim/u1tzres2/)
 
 <br>
 
@@ -100,7 +100,7 @@ window.onload = function () {
 };
 ```
 
-[+JS 예시](https://kimhyoyeong.github.io/tech/assets/html/svg_tweenmax_motion.html)
+[javascript 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_tweenmax_motion.html)
 
 <br>
 
@@ -109,8 +109,8 @@ window.onload = function () {
 > 기존 CSS 애니메이션처럼 구현 가능하다
 >
 > ***IE 불가**(transform 속성 지원하지 않음)
-
-[+jsfddle테스트](https://jsfiddle.net/hyokim/wzv902rL/)
+>
+> [jsfddle테스트](https://jsfiddle.net/hyokim/wzv902rL/)
 
 <br>
 
@@ -152,7 +152,13 @@ window.onload = function () {
 </svg>
 ```
 
-[+CSS 예시](https://kimhyoyeong.github.io/tech/assets/html/svg_css_motion.html)
+[CSS 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_css_motion.html)
+
+<br>
+
+|      | javascript | css    |
+| ---- | ---------- | ------ |
+| IE   | 가능       | 불가능 |
 
 <br>
 
@@ -198,4 +204,10 @@ window.onload = function () {
 
 <br>
 
-[+animate 예시](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
+|      | Animated SVG Exporter | GIF  | PNG  |
+| ---- | --------------------- | ---- | ---- |
+| IE   | 불가능                | 가능 | 가능 |
+
+<br>
+
+[animate 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
