@@ -95,8 +95,9 @@ window.onload = function () {
 
 <br>
 
-- [jsfddle테스트](https://jsfiddle.net/hyokim/u1tzres2/)
-- [javascript 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_tweenmax_motion.html)
+[jsfddle테스트](https://jsfiddle.net/hyokim/u1tzres2/)
+
+[javascript 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_tweenmax_motion.html)
 
 <br>
 
@@ -189,7 +190,7 @@ window.onload = function () {
 
 <br>
 
-- [animate 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
+[animate 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
 
 <br>
 
