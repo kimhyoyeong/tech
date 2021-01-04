@@ -41,9 +41,6 @@ SVG 코드 내 사용할 요소(ex. path)에 g태그로 감싸고 아이디 or �
 
 트윈맥스를 사용하여 기존처럼 쉽게 모션 구현이 가능하다
 
-- [jsfddle테스트](https://jsfiddle.net/hyokim/u1tzres2/)
-- [javascript 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_tweenmax_motion.html)
-
 <br>
 
 ① SVG 코드 안에 요소를 컨트롤하기 위해 object 태그를 사용
@@ -96,12 +93,14 @@ window.onload = function () {
 
 <br>
 
+- [jsfddle테스트](https://jsfiddle.net/hyokim/u1tzres2/)
+- [javascript 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_tweenmax_motion.html)
+
+<br>
+
 #### 1-2. CSS 
 
 기존 CSS 애니메이션처럼 구현 가능하다
-
-- [jsfddle테스트](https://jsfiddle.net/hyokim/wzv902rL/)
-- [CSS 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_css_motion.html)
 
 <br>
 
@@ -143,6 +142,13 @@ window.onload = function () {
 
 <br>
 
+- [jsfddle테스트](https://jsfiddle.net/hyokim/wzv902rL/)
+- [CSS 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_css_motion.html)
+
+<br>
+
+***IE 호환**
+
 |      | javascript | css                                  |
 | ---- | ---------- | ------------------------------------ |
 | IE   | 가능       | 불가능(transform 속성 지원하지 않음) |
@@ -152,8 +158,6 @@ window.onload = function () {
 ### 2. Adobe Animate을 활용한 구현 방법
 
 해당 프로그램을 사용하면 좀 더 세밀한 애니메이션 구현이 가능하다 
-
-[animate 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
 
 <br>
 
@@ -182,6 +186,12 @@ window.onload = function () {
 ② [Animated PNG Maker](https://ezgif.com/apng-maker) 활용하여 움직이는 PNG 파일로 작업 
 
 <br>
+
+[animate 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
+
+<br>
+
+***IE 호환**
 
 |      | Animated SVG Exporter | GIF  | PNG  |
 | ---- | --------------------- | ---- | ---- |
