@@ -145,8 +145,9 @@ window.onload = function () {
 
 <br>
 
-- [jsfddle테스트](https://jsfiddle.net/hyokim/wzv902rL/)
-- [CSS 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_css_motion.html)
+[jsfddle테스트](https://jsfiddle.net/hyokim/wzv902rL/)
+
+[CSS 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_css_motion.html)
 
 <br>
 
