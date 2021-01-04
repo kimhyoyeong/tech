@@ -47,13 +47,15 @@ SVG 코드 내 사용할 요소(ex. path)에 g태그로 감싸고 아이디 or �
 
 > inline으로 작업하면 소스가 더러워지기 떄문에 object 태그방법을 선호
 
+② object 태그에 id값 추가
+
 ```html
 <object id="svgIcon" type="image/svg+xml" data="images/test.svg"></object>
 ```
 
 <br>
 
-② SVG 코드 안에 사용할 요소들에 g 태그로 감싸고 아이디 추가
+③ SVG 코드 안에 사용할 요소들에 g 태그로 감싸고 아이디 추가
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 40 40">
@@ -187,7 +189,7 @@ window.onload = function () {
 
 <br>
 
-[animate 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
+- [animate 예시페이지](https://kimhyoyeong.github.io/tech/assets/html/svg_animate_motion.html)
 
 <br>
 
