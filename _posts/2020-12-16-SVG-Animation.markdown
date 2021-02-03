@@ -80,6 +80,7 @@ SVG 코드 내 사용할 요소(ex. path)에 g태그로 감싸고 아이디 or �
 ③ 트윈맥스로 기존처럼 모션 구현
 
 ```javascript
+//javascript
 window.onload = function () {
 	var svgIcon = document.getElementById("svgIcon").contentDocument;
 	var svgIconItem = svgIcon.getElementById("svgIconItem");
@@ -91,6 +92,22 @@ window.onload = function () {
 		ease: Power4.easeIn,
 	});
 };
+```
+
+```javascript
+//jquery
+window.onload = function () {
+	$(function(){
+		var svgIcon=$('#svgIcon')[0].contentDocument;
+		TweenMax.to($(svgIcon).find('#svgIconItem'), 0.5, {
+			transformOrigin: "center",
+            opacity: 0,
+            yoyo: true,
+            repeat: -1,
+            ease: Power4.easeIn,
+		});
+	});
+}
 ```
 
 <br>
