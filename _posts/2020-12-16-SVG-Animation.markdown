@@ -101,12 +101,12 @@ window.onload = function () {
 		var svgIcon=$('#svgIcon')[0].contentDocument;
 		TweenMax.to($(svgIcon).find('#svgIconItem'), 0.5, {
 			transformOrigin: "center",
-            opacity: 0,
-            yoyo: true,
-            repeat: -1,
-            ease: Power4.easeIn,
-		});
-	});
+			opacity: 0,
+			yoyo: true,
+			repeat: -1,
+			ease: Power4.easeIn,
+        });
+    });
 }
 ```
 
